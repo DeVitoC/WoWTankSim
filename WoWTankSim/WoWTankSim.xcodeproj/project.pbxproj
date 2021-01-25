@@ -39,6 +39,7 @@
 		E2FE912D25BF537F007D3B97 /* BISItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE912C25BF537F007D3B97 /* BISItemView.swift */; };
 		E2FE913225BF58E2007D3B97 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913125BF58E2007D3B97 /* Player.swift */; };
 		E2FE913725BF5ABF007D3B97 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913625BF5ABF007D3B97 /* Enums.swift */; };
+		E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913B25BF62D8007D3B97 /* TalentTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		E2FE912C25BF537F007D3B97 /* BISItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISItemView.swift; sourceTree = "<group>"; };
 		E2FE913125BF58E2007D3B97 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E2FE913625BF5ABF007D3B97 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		E2FE913B25BF62D8007D3B97 /* TalentTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FE913125BF58E2007D3B97 /* Player.swift */,
+				E2FE913B25BF62D8007D3B97 /* TalentTree.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */,
 				E2FE910E25BF52FE007D3B97 /* SelectLegendaryView.swift in Sources */,
 				E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */,
+				E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */,
 				E2FE90D525BF508A007D3B97 /* SelectStyleViewController.swift in Sources */,
 				E2FE90E425BF50EC007D3B97 /* UsedSoulbindViewController.swift in Sources */,
 				E2FE90DA25BF50A4007D3B97 /* BISOverviewViewController.swift in Sources */,
