@@ -19,3 +19,35 @@ enum Source {
     case DungeonMythicPlus(Int)
     case PVPHonor, PVPConquest, Crafted, BOE
 }
+
+enum Soulbind {
+    case Kyrian(KyrianSoulbind)
+    case NightFae(NightFaeSoulbind)
+    case Venthyr(VenthyrSoulbind)
+    case Necrolord(NecrolordSoulbind)
+
+    enum KyrianSoulbind {
+        case Pelagos
+        case Kleia
+        case Mikanikos
+    }
+
+    enum NightFaeSoulbind {
+        case Niya
+        case Dreamweaver
+        case Korayn
+    }
+
+    enum VenthyrSoulbind {
+        case Nadjia
+        case Theotar
+        case Draven
+    }
+
+    enum NecrolordSoulbind {
+        case Marileth
+        case Emeni
+        case Heirmir
+    }
+}
+
