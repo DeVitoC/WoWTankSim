@@ -19,3 +19,10 @@ enum Source {
     case DungeonMythicPlus(Int)
     case PVPHonor, PVPConquest, Crafted, BOE
 }
+
+enum Soulbind {
+    case Kyrian
+    case NightFae
+    case Venthyr
+    case Necrolord
+}
