@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YH4-b8-Tmp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Class View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SelectClassViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SelectClassView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D5i-oE-l9D"/>
+                    <connections>
+                        <segue destination="t1x-jn-dMG" kind="show" identifier="SelectSourceSegue" id="53T-YK-VEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="103.79464285714285"/>
+        </scene>
+        <!--Select Gear Source View Controller-->
+        <scene sceneID="8g6-Cn-IB9">
+            <objects>
+                <viewController id="t1x-jn-dMG" customClass="SelectGearSourceViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q8y-uX-TxE" customClass="SelectGearSourceView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FAO-gI-wVq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xll-hf-DES"/>
+                    <connections>
+                        <segue destination="tIS-TG-5fA" kind="show" identifier="SelectTalentsSegue" id="WNv-lJ-1O6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aS9-R7-Xic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844.9275362318842" y="103.79464285714285"/>
+        </scene>
+        <!--Select Talents View Controller-->
+        <scene sceneID="uBt-UT-XOO">
+            <objects>
+                <viewController id="tIS-TG-5fA" customClass="SelectTalentsViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fsU-1u-MDC" customClass="SelectTalentsView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JYE-Zd-bNY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bt1-IM-p3g"/>
+                    <connections>
+                        <segue destination="VmS-22-k7w" kind="show" identifier="SelectSoulbindSegue" id="j2b-lD-6dh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRQ-75-L3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663.768115942029" y="103.79464285714285"/>
+        </scene>
+        <!--Item View Controller-->
+        <scene sceneID="fGd-jW-eMd">
+            <objects>
+                <viewController id="p1O-wa-vxw" customClass="BISItemViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6M8-zj-Jl4" customClass="BISItemView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lno-SV-Eld"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kxo-w1-XLC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBd-Sn-ofM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7139.130434782609" y="103.79464285714285"/>
+        </scene>
+        <!--Select Soulbind View Controller-->
+        <scene sceneID="yJk-yp-dCK">
+            <objects>
+                <viewController id="VmS-22-k7w" customClass="SelectSoulbindViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dYL-np-lwZ" customClass="SelectSoulbindView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jjg-j6-xA5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zfq-7j-QOs"/>
+                    <connections>
+                        <segue destination="pyJ-ZW-aS6" kind="show" identifier="SelectLegendarySegue" id="gPd-ix-Zke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcZ-gQ-6zu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3544.9275362318845" y="103.79464285714285"/>
+        </scene>
+        <!--Select Legendary View Controller-->
+        <scene sceneID="cSX-03-nwM">
+            <objects>
+                <viewController id="pyJ-ZW-aS6" customClass="SelectLegendaryViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PcS-zN-Te8" customClass="SelectLegendaryView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pVj-cB-bIV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ub-tR-eAi"/>
+                    <connections>
+                        <segue destination="iSM-k7-nEr" kind="show" identifier="SelectStyleSegue" id="tJ7-qF-1Oh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJq-bU-MKy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4428.985507246377" y="103.79464285714285"/>
+        </scene>
+        <!--Select Style View Controller-->
+        <scene sceneID="vin-V0-FOa">
+            <objects>
+                <viewController id="iSM-k7-nEr" customClass="SelectStyleViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rlz-XA-j8t" customClass="SelectStyleView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="owy-i4-R5C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="brr-Sf-QVo"/>
+                    <connections>
+                        <segue destination="S6N-09-zN1" kind="show" identifier="BISOverviewSegue" id="rqb-Hc-rhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAG-de-QGX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5315.9420289855079" y="103.79464285714285"/>
+        </scene>
+        <!--Overview View Controller-->
+        <scene sceneID="XUL-kA-jS4">
+            <objects>
+                <viewController id="S6N-09-zN1" customClass="BISOverviewViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O1u-mg-cQ6" customClass="BISOverviewView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Se7-fB-oPk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fQ0-XP-b9o"/>
+                    <connections>
+                        <segue destination="p1O-wa-vxw" kind="show" identifier="BISItemSegue" id="8kJ-sW-oix"/>
+                        <segue destination="cpV-ec-nVg" kind="show" identifier="UsedTalentsSegue" id="z8U-DG-V2h"/>
+                        <segue destination="Ux9-X9-WQp" kind="show" identifier="UsedSoulbindsSegue" id="6fi-1c-GF9"/>
+                        <segue destination="jtr-rd-Cyw" kind="show" identifier="UsedLegendarySegue" id="Erw-1h-DUt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Uk-Gs-fru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6228.985507246377" y="103.79464285714285"/>
+        </scene>
+        <!--Used Legendary View Controller-->
+        <scene sceneID="14e-J5-RrT">
+            <objects>
+                <viewController id="jtr-rd-Cyw" customClass="UsedLegendaryViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XCc-Lx-F6O" customClass="UsedLegendaryView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DyY-yB-7R9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G7f-5V-ckB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WbI-xV-UIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7139" y="921"/>
+        </scene>
+        <!--Used Soulbind View Controller-->
+        <scene sceneID="bqN-FW-EHQ">
+            <objects>
+                <viewController id="Ux9-X9-WQp" customClass="UsedSoulbindViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3N-Bh-V4q" customClass="UsedSoulbindView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="b3K-M9-ld6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yfX-ZO-F3u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u02-k6-ed9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6229" y="921"/>
+        </scene>
+        <!--Used Talents View Controller-->
+        <scene sceneID="pqh-92-kaU">
+            <objects>
+                <viewController id="cpV-ec-nVg" customClass="UsedTalentsViewController" customModule="WoWTankSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pnW-jZ-IaN" customClass="UsedTalentsView" customModule="WoWTankSim" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZPg-hC-Q2p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6LR-ow-Fbe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iT6-dS-5w2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5316" y="921"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ygD-Gf-cq3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YH4-b8-Tmp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rgf-n9-ta0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kMd-3R-3rg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYy-ar-v95" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907D25BF4782007D3B97 /* AppDelegate.swift */; };
+		E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */; };
+		E2FE908225BF4782007D3B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE908125BF4782007D3B97 /* ViewController.swift */; };
+		E2FE908525BF4782007D3B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FE908325BF4782007D3B97 /* Main.storyboard */; };
+		E2FE908725BF4783007D3B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FE908625BF4783007D3B97 /* Assets.xcassets */; };
+		E2FE908A25BF4783007D3B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FE908825BF4783007D3B97 /* LaunchScreen.storyboard */; };
+		E2FE909525BF4783007D3B97 /* WoWTankSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE909425BF4783007D3B97 /* WoWTankSimTests.swift */; };
+		E2FE90A025BF4783007D3B97 /* WoWTankSimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE909F25BF4783007D3B97 /* WoWTankSimUITests.swift */; };
+		E2FE90BC25BF4FF3007D3B97 /* SelectClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90BB25BF4FF3007D3B97 /* SelectClassViewController.swift */; };
+		E2FE90C125BF5029007D3B97 /* SelectGearSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90C025BF5029007D3B97 /* SelectGearSourceViewController.swift */; };
+		E2FE90C625BF5041007D3B97 /* SelectTalentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90C525BF5041007D3B97 /* SelectTalentsViewController.swift */; };
+		E2FE90CB25BF505B007D3B97 /* SelectSoulbindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90CA25BF505B007D3B97 /* SelectSoulbindViewController.swift */; };
+		E2FE90D025BF506C007D3B97 /* SelectLegendaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90CF25BF506C007D3B97 /* SelectLegendaryViewController.swift */; };
+		E2FE90D525BF508A007D3B97 /* SelectStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90D425BF508A007D3B97 /* SelectStyleViewController.swift */; };
+		E2FE90DA25BF50A4007D3B97 /* BISOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90D925BF50A4007D3B97 /* BISOverviewViewController.swift */; };
+		E2FE90DF25BF50D7007D3B97 /* UsedTalentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90DE25BF50D7007D3B97 /* UsedTalentsViewController.swift */; };
+		E2FE90E425BF50EC007D3B97 /* UsedSoulbindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90E325BF50EC007D3B97 /* UsedSoulbindViewController.swift */; };
+		E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90E825BF50FA007D3B97 /* UsedLegendaryViewController.swift */; };
+		E2FE90EE25BF510F007D3B97 /* BISItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90ED25BF510F007D3B97 /* BISItemViewController.swift */; };
+		E2FE90FA25BF52BD007D3B97 /* SelectClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90F925BF52BD007D3B97 /* SelectClassView.swift */; };
+		E2FE90FF25BF52CF007D3B97 /* SelectGearSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90FE25BF52CF007D3B97 /* SelectGearSourceView.swift */; };
+		E2FE910425BF52DB007D3B97 /* SelectTalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE910325BF52DB007D3B97 /* SelectTalentsView.swift */; };
+		E2FE910925BF52EE007D3B97 /* SelectSoulbindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE910825BF52EE007D3B97 /* SelectSoulbindView.swift */; };
+		E2FE910E25BF52FE007D3B97 /* SelectLegendaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE910D25BF52FE007D3B97 /* SelectLegendaryView.swift */; };
+		E2FE911325BF530D007D3B97 /* SelectStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE911225BF530D007D3B97 /* SelectStyleView.swift */; };
+		E2FE911925BF533D007D3B97 /* BISOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE911825BF533D007D3B97 /* BISOverviewView.swift */; };
+		E2FE911E25BF534C007D3B97 /* UsedTalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE911D25BF534C007D3B97 /* UsedTalentsView.swift */; };
+		E2FE912325BF5359007D3B97 /* UsedSoulbindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE912225BF5359007D3B97 /* UsedSoulbindView.swift */; };
+		E2FE912825BF5368007D3B97 /* UsedLegendaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE912725BF5368007D3B97 /* UsedLegendaryView.swift */; };
+		E2FE912D25BF537F007D3B97 /* BISItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE912C25BF537F007D3B97 /* BISItemView.swift */; };
+		E2FE913225BF58E2007D3B97 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913125BF58E2007D3B97 /* Player.swift */; };
+		E2FE913725BF5ABF007D3B97 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913625BF5ABF007D3B97 /* Enums.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2FE909125BF4783007D3B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2FE907225BF4782007D3B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2FE907925BF4782007D3B97;
+			remoteInfo = WoWTankSim;
+		};
+		E2FE909C25BF4783007D3B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2FE907225BF4782007D3B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2FE907925BF4782007D3B97;
+			remoteInfo = WoWTankSim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2FE907A25BF4782007D3B97 /* WoWTankSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTankSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FE907D25BF4782007D3B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E2FE908125BF4782007D3B97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2FE908425BF4782007D3B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2FE908625BF4783007D3B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2FE908925BF4783007D3B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2FE908B25BF4783007D3B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FE909025BF4783007D3B97 /* WoWTankSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoWTankSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FE909425BF4783007D3B97 /* WoWTankSimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoWTankSimTests.swift; sourceTree = "<group>"; };
+		E2FE909625BF4783007D3B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FE909B25BF4783007D3B97 /* WoWTankSimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoWTankSimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FE909F25BF4783007D3B97 /* WoWTankSimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoWTankSimUITests.swift; sourceTree = "<group>"; };
+		E2FE90A125BF4783007D3B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FE90B025BF485A007D3B97 /* WoWTankSim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WoWTankSim.entitlements; sourceTree = "<group>"; };
+		E2FE90BB25BF4FF3007D3B97 /* SelectClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectClassViewController.swift; sourceTree = "<group>"; };
+		E2FE90C025BF5029007D3B97 /* SelectGearSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGearSourceViewController.swift; sourceTree = "<group>"; };
+		E2FE90C525BF5041007D3B97 /* SelectTalentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTalentsViewController.swift; sourceTree = "<group>"; };
+		E2FE90CA25BF505B007D3B97 /* SelectSoulbindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSoulbindViewController.swift; sourceTree = "<group>"; };
+		E2FE90CF25BF506C007D3B97 /* SelectLegendaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLegendaryViewController.swift; sourceTree = "<group>"; };
+		E2FE90D425BF508A007D3B97 /* SelectStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStyleViewController.swift; sourceTree = "<group>"; };
+		E2FE90D925BF50A4007D3B97 /* BISOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISOverviewViewController.swift; sourceTree = "<group>"; };
+		E2FE90DE25BF50D7007D3B97 /* UsedTalentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedTalentsViewController.swift; sourceTree = "<group>"; };
+		E2FE90E325BF50EC007D3B97 /* UsedSoulbindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedSoulbindViewController.swift; sourceTree = "<group>"; };
+		E2FE90E825BF50FA007D3B97 /* UsedLegendaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedLegendaryViewController.swift; sourceTree = "<group>"; };
+		E2FE90ED25BF510F007D3B97 /* BISItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISItemViewController.swift; sourceTree = "<group>"; };
+		E2FE90F925BF52BD007D3B97 /* SelectClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectClassView.swift; sourceTree = "<group>"; };
+		E2FE90FE25BF52CF007D3B97 /* SelectGearSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGearSourceView.swift; sourceTree = "<group>"; };
+		E2FE910325BF52DB007D3B97 /* SelectTalentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTalentsView.swift; sourceTree = "<group>"; };
+		E2FE910825BF52EE007D3B97 /* SelectSoulbindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSoulbindView.swift; sourceTree = "<group>"; };
+		E2FE910D25BF52FE007D3B97 /* SelectLegendaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLegendaryView.swift; sourceTree = "<group>"; };
+		E2FE911225BF530D007D3B97 /* SelectStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStyleView.swift; sourceTree = "<group>"; };
+		E2FE911825BF533D007D3B97 /* BISOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISOverviewView.swift; sourceTree = "<group>"; };
+		E2FE911D25BF534C007D3B97 /* UsedTalentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedTalentsView.swift; sourceTree = "<group>"; };
+		E2FE912225BF5359007D3B97 /* UsedSoulbindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedSoulbindView.swift; sourceTree = "<group>"; };
+		E2FE912725BF5368007D3B97 /* UsedLegendaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedLegendaryView.swift; sourceTree = "<group>"; };
+		E2FE912C25BF537F007D3B97 /* BISItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISItemView.swift; sourceTree = "<group>"; };
+		E2FE913125BF58E2007D3B97 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E2FE913625BF5ABF007D3B97 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2FE907725BF4782007D3B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE908D25BF4783007D3B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE909825BF4783007D3B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2FE907125BF4782007D3B97 = {
+			isa = PBXGroup;
+			children = (
+				E2FE907C25BF4782007D3B97 /* WoWTankSim */,
+				E2FE909325BF4783007D3B97 /* WoWTankSimTests */,
+				E2FE909E25BF4783007D3B97 /* WoWTankSimUITests */,
+				E2FE907B25BF4782007D3B97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2FE907B25BF4782007D3B97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE907A25BF4782007D3B97 /* WoWTankSim.app */,
+				E2FE909025BF4783007D3B97 /* WoWTankSimTests.xctest */,
+				E2FE909B25BF4783007D3B97 /* WoWTankSimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2FE907C25BF4782007D3B97 /* WoWTankSim */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE90BA25BF495C007D3B97 /* Model */,
+				E2FE90B925BF4955007D3B97 /* Views */,
+				E2FE90B825BF494D007D3B97 /* Controllers */,
+				E2FE90B725BF48E4007D3B97 /* Other */,
+				E2FE908125BF4782007D3B97 /* ViewController.swift */,
+			);
+			path = WoWTankSim;
+			sourceTree = "<group>";
+		};
+		E2FE909325BF4783007D3B97 /* WoWTankSimTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE909425BF4783007D3B97 /* WoWTankSimTests.swift */,
+				E2FE909625BF4783007D3B97 /* Info.plist */,
+			);
+			path = WoWTankSimTests;
+			sourceTree = "<group>";
+		};
+		E2FE909E25BF4783007D3B97 /* WoWTankSimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE909F25BF4783007D3B97 /* WoWTankSimUITests.swift */,
+				E2FE90A125BF4783007D3B97 /* Info.plist */,
+			);
+			path = WoWTankSimUITests;
+			sourceTree = "<group>";
+		};
+		E2FE90B725BF48E4007D3B97 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE90B025BF485A007D3B97 /* WoWTankSim.entitlements */,
+				E2FE907D25BF4782007D3B97 /* AppDelegate.swift */,
+				E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */,
+				E2FE908625BF4783007D3B97 /* Assets.xcassets */,
+				E2FE908B25BF4783007D3B97 /* Info.plist */,
+				E2FE913625BF5ABF007D3B97 /* Enums.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E2FE90B825BF494D007D3B97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE90BB25BF4FF3007D3B97 /* SelectClassViewController.swift */,
+				E2FE90C025BF5029007D3B97 /* SelectGearSourceViewController.swift */,
+				E2FE90C525BF5041007D3B97 /* SelectTalentsViewController.swift */,
+				E2FE90CA25BF505B007D3B97 /* SelectSoulbindViewController.swift */,
+				E2FE90CF25BF506C007D3B97 /* SelectLegendaryViewController.swift */,
+				E2FE90D425BF508A007D3B97 /* SelectStyleViewController.swift */,
+				E2FE90D925BF50A4007D3B97 /* BISOverviewViewController.swift */,
+				E2FE90DE25BF50D7007D3B97 /* UsedTalentsViewController.swift */,
+				E2FE90E325BF50EC007D3B97 /* UsedSoulbindViewController.swift */,
+				E2FE90E825BF50FA007D3B97 /* UsedLegendaryViewController.swift */,
+				E2FE90ED25BF510F007D3B97 /* BISItemViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2FE90B925BF4955007D3B97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE911725BF5314007D3B97 /* ResultViews */,
+				E2FE90F825BF529B007D3B97 /* SelectionViews */,
+				E2FE908325BF4782007D3B97 /* Main.storyboard */,
+				E2FE908825BF4783007D3B97 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2FE90BA25BF495C007D3B97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE913125BF58E2007D3B97 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2FE90F825BF529B007D3B97 /* SelectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE90F925BF52BD007D3B97 /* SelectClassView.swift */,
+				E2FE90FE25BF52CF007D3B97 /* SelectGearSourceView.swift */,
+				E2FE910325BF52DB007D3B97 /* SelectTalentsView.swift */,
+				E2FE910825BF52EE007D3B97 /* SelectSoulbindView.swift */,
+				E2FE910D25BF52FE007D3B97 /* SelectLegendaryView.swift */,
+				E2FE911225BF530D007D3B97 /* SelectStyleView.swift */,
+			);
+			path = SelectionViews;
+			sourceTree = "<group>";
+		};
+		E2FE911725BF5314007D3B97 /* ResultViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2FE911825BF533D007D3B97 /* BISOverviewView.swift */,
+				E2FE911D25BF534C007D3B97 /* UsedTalentsView.swift */,
+				E2FE912225BF5359007D3B97 /* UsedSoulbindView.swift */,
+				E2FE912725BF5368007D3B97 /* UsedLegendaryView.swift */,
+				E2FE912C25BF537F007D3B97 /* BISItemView.swift */,
+			);
+			path = ResultViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2FE907925BF4782007D3B97 /* WoWTankSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FE90A425BF4783007D3B97 /* Build configuration list for PBXNativeTarget "WoWTankSim" */;
+			buildPhases = (
+				E2FE907625BF4782007D3B97 /* Sources */,
+				E2FE907725BF4782007D3B97 /* Frameworks */,
+				E2FE907825BF4782007D3B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoWTankSim;
+			productName = WoWTankSim;
+			productReference = E2FE907A25BF4782007D3B97 /* WoWTankSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2FE908F25BF4783007D3B97 /* WoWTankSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FE90A725BF4783007D3B97 /* Build configuration list for PBXNativeTarget "WoWTankSimTests" */;
+			buildPhases = (
+				E2FE908C25BF4783007D3B97 /* Sources */,
+				E2FE908D25BF4783007D3B97 /* Frameworks */,
+				E2FE908E25BF4783007D3B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2FE909225BF4783007D3B97 /* PBXTargetDependency */,
+			);
+			name = WoWTankSimTests;
+			productName = WoWTankSimTests;
+			productReference = E2FE909025BF4783007D3B97 /* WoWTankSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2FE909A25BF4783007D3B97 /* WoWTankSimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2FE90AA25BF4783007D3B97 /* Build configuration list for PBXNativeTarget "WoWTankSimUITests" */;
+			buildPhases = (
+				E2FE909725BF4783007D3B97 /* Sources */,
+				E2FE909825BF4783007D3B97 /* Frameworks */,
+				E2FE909925BF4783007D3B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2FE909D25BF4783007D3B97 /* PBXTargetDependency */,
+			);
+			name = WoWTankSimUITests;
+			productName = WoWTankSimUITests;
+			productReference = E2FE909B25BF4783007D3B97 /* WoWTankSimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2FE907225BF4782007D3B97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					E2FE907925BF4782007D3B97 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					E2FE908F25BF4783007D3B97 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E2FE907925BF4782007D3B97;
+					};
+					E2FE909A25BF4783007D3B97 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E2FE907925BF4782007D3B97;
+					};
+				};
+			};
+			buildConfigurationList = E2FE907525BF4782007D3B97 /* Build configuration list for PBXProject "WoWTankSim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2FE907125BF4782007D3B97;
+			productRefGroup = E2FE907B25BF4782007D3B97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2FE907925BF4782007D3B97 /* WoWTankSim */,
+				E2FE908F25BF4783007D3B97 /* WoWTankSimTests */,
+				E2FE909A25BF4783007D3B97 /* WoWTankSimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2FE907825BF4782007D3B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE908A25BF4783007D3B97 /* LaunchScreen.storyboard in Resources */,
+				E2FE908725BF4783007D3B97 /* Assets.xcassets in Resources */,
+				E2FE908525BF4782007D3B97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE908E25BF4783007D3B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE909925BF4783007D3B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2FE907625BF4782007D3B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE90FF25BF52CF007D3B97 /* SelectGearSourceView.swift in Sources */,
+				E2FE90D025BF506C007D3B97 /* SelectLegendaryViewController.swift in Sources */,
+				E2FE908225BF4782007D3B97 /* ViewController.swift in Sources */,
+				E2FE911925BF533D007D3B97 /* BISOverviewView.swift in Sources */,
+				E2FE912325BF5359007D3B97 /* UsedSoulbindView.swift in Sources */,
+				E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */,
+				E2FE910425BF52DB007D3B97 /* SelectTalentsView.swift in Sources */,
+				E2FE90CB25BF505B007D3B97 /* SelectSoulbindViewController.swift in Sources */,
+				E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */,
+				E2FE910E25BF52FE007D3B97 /* SelectLegendaryView.swift in Sources */,
+				E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */,
+				E2FE90D525BF508A007D3B97 /* SelectStyleViewController.swift in Sources */,
+				E2FE90E425BF50EC007D3B97 /* UsedSoulbindViewController.swift in Sources */,
+				E2FE90DA25BF50A4007D3B97 /* BISOverviewViewController.swift in Sources */,
+				E2FE90DF25BF50D7007D3B97 /* UsedTalentsViewController.swift in Sources */,
+				E2FE90EE25BF510F007D3B97 /* BISItemViewController.swift in Sources */,
+				E2FE913725BF5ABF007D3B97 /* Enums.swift in Sources */,
+				E2FE911E25BF534C007D3B97 /* UsedTalentsView.swift in Sources */,
+				E2FE912D25BF537F007D3B97 /* BISItemView.swift in Sources */,
+				E2FE913225BF58E2007D3B97 /* Player.swift in Sources */,
+				E2FE912825BF5368007D3B97 /* UsedLegendaryView.swift in Sources */,
+				E2FE90C125BF5029007D3B97 /* SelectGearSourceViewController.swift in Sources */,
+				E2FE910925BF52EE007D3B97 /* SelectSoulbindView.swift in Sources */,
+				E2FE911325BF530D007D3B97 /* SelectStyleView.swift in Sources */,
+				E2FE90C625BF5041007D3B97 /* SelectTalentsViewController.swift in Sources */,
+				E2FE90FA25BF52BD007D3B97 /* SelectClassView.swift in Sources */,
+				E2FE90BC25BF4FF3007D3B97 /* SelectClassViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE908C25BF4783007D3B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE909525BF4783007D3B97 /* WoWTankSimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2FE909725BF4783007D3B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FE90A025BF4783007D3B97 /* WoWTankSimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2FE909225BF4783007D3B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2FE907925BF4782007D3B97 /* WoWTankSim */;
+			targetProxy = E2FE909125BF4783007D3B97 /* PBXContainerItemProxy */;
+		};
+		E2FE909D25BF4783007D3B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2FE907925BF4782007D3B97 /* WoWTankSim */;
+			targetProxy = E2FE909C25BF4783007D3B97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2FE908325BF4782007D3B97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2FE908425BF4782007D3B97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2FE908825BF4783007D3B97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2FE908925BF4783007D3B97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2FE90A225BF4783007D3B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2FE90A325BF4783007D3B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2FE90A525BF4783007D3B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WoWTankSim/WoWTankSim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				INFOPLIST_FILE = WoWTankSim/Other/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.WoWTankSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		E2FE90A625BF4783007D3B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WoWTankSim/WoWTankSim.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				INFOPLIST_FILE = WoWTankSim/Other/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.WoWTankSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+		E2FE90A825BF4783007D3B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				INFOPLIST_FILE = WoWTankSimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.WoWTankSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoWTankSim.app/WoWTankSim";
+			};
+			name = Debug;
+		};
+		E2FE90A925BF4783007D3B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				INFOPLIST_FILE = WoWTankSimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.WoWTankSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoWTankSim.app/WoWTankSim";
+			};
+			name = Release;
+		};
+		E2FE90AB25BF4783007D3B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				INFOPLIST_FILE = WoWTankSimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.WoWTankSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoWTankSim;
+			};
+			name = Debug;
+		};
+		E2FE90AC25BF4783007D3B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				INFOPLIST_FILE = WoWTankSimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.christopherdevito.WoWTankSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WoWTankSim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2FE907525BF4782007D3B97 /* Build configuration list for PBXProject "WoWTankSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE90A225BF4783007D3B97 /* Debug */,
+				E2FE90A325BF4783007D3B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2FE90A425BF4783007D3B97 /* Build configuration list for PBXNativeTarget "WoWTankSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE90A525BF4783007D3B97 /* Debug */,
+				E2FE90A625BF4783007D3B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2FE90A725BF4783007D3B97 /* Build configuration list for PBXNativeTarget "WoWTankSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE90A825BF4783007D3B97 /* Debug */,
+				E2FE90A925BF4783007D3B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2FE90AA25BF4783007D3B97 /* Build configuration list for PBXNativeTarget "WoWTankSimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2FE90AB25BF4783007D3B97 /* Debug */,
+				E2FE90AC25BF4783007D3B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2FE907225BF4782007D3B97 /* Project object */;
+}
