@@ -182,12 +182,12 @@
 		E2FE90B725BF48E4007D3B97 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E2FE913625BF5ABF007D3B97 /* Enums.swift */,
 				E2FE90B025BF485A007D3B97 /* WoWTankSim.entitlements */,
 				E2FE907D25BF4782007D3B97 /* AppDelegate.swift */,
 				E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */,
 				E2FE908625BF4783007D3B97 /* Assets.xcassets */,
 				E2FE908B25BF4783007D3B97 /* Info.plist */,
-				E2FE913625BF5ABF007D3B97 /* Enums.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
