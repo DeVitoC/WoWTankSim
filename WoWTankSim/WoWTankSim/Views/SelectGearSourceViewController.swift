@@ -9,6 +9,8 @@ import UIKit
 
 class SelectGearSourceViewController: UIViewController {
 
+    var player: Player?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
