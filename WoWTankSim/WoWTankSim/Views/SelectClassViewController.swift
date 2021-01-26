@@ -8,7 +8,8 @@
 import UIKit
 
 class SelectClassViewController: UIViewController {
-    let player = Player()
+
+    let playerController = PlayerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +36,15 @@ class SelectClassViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "SelectSourceSegue" {
+            guard let destinationVC = segue.destination as? SelectGearSourceViewController else { return }
+
+            destinationVC.player = playerController.addPlayer(spec: Spec.ProtectionPaladin)
+        }
     }
-    */
 
 }
