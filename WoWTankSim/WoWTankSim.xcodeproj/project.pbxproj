@@ -176,6 +176,13 @@
 		E2FE90B825BF494D007D3B97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2FE90B925BF4955007D3B97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				E2FE90BB25BF4FF3007D3B97 /* SelectClassViewController.swift */,
 				E2FE90C025BF5029007D3B97 /* SelectGearSourceViewController.swift */,
 				E2FE90C525BF5041007D3B97 /* SelectTalentsViewController.swift */,
@@ -187,13 +194,6 @@
 				E2FE90E325BF50EC007D3B97 /* UsedSoulbindViewController.swift */,
 				E2FE90E825BF50FA007D3B97 /* UsedLegendaryViewController.swift */,
 				E2FE90ED25BF510F007D3B97 /* BISItemViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		E2FE90B925BF4955007D3B97 /* Views */ = {
-			isa = PBXGroup;
-			children = (
 				E2FE908325BF4782007D3B97 /* Main.storyboard */,
 				E2FE908825BF4783007D3B97 /* LaunchScreen.storyboard */,
 			);
