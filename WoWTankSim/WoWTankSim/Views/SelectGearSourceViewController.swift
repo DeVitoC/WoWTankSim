@@ -1,5 +1,5 @@
 //
-//  SelectClassViewController.swift
+//  SelectGearSourceViewController.swift
 //  WoWTankSim
 //
 //  Created by Christopher Devito on 1/25/21.
@@ -7,7 +7,9 @@
 
 import UIKit
 
-class SelectClassViewController: UIViewController {
+class SelectGearSourceViewController: UIViewController {
+
+    var player: Player?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E279DFEE25C0896B00D5CCFA /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279DFED25C0896B00D5CCFA /* UIElements.swift */; };
+		E279E00525C0C9E500D5CCFA /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279E00425C0C9E500D5CCFA /* PlayerController.swift */; };
 		E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907D25BF4782007D3B97 /* AppDelegate.swift */; };
 		E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */; };
 		E2FE908225BF4782007D3B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE908125BF4782007D3B97 /* ViewController.swift */; };
@@ -26,17 +28,6 @@
 		E2FE90E425BF50EC007D3B97 /* UsedSoulbindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90E325BF50EC007D3B97 /* UsedSoulbindViewController.swift */; };
 		E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90E825BF50FA007D3B97 /* UsedLegendaryViewController.swift */; };
 		E2FE90EE25BF510F007D3B97 /* BISItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90ED25BF510F007D3B97 /* BISItemViewController.swift */; };
-		E2FE90FA25BF52BD007D3B97 /* SelectClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90F925BF52BD007D3B97 /* SelectClassView.swift */; };
-		E2FE90FF25BF52CF007D3B97 /* SelectGearSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE90FE25BF52CF007D3B97 /* SelectGearSourceView.swift */; };
-		E2FE910425BF52DB007D3B97 /* SelectTalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE910325BF52DB007D3B97 /* SelectTalentsView.swift */; };
-		E2FE910925BF52EE007D3B97 /* SelectSoulbindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE910825BF52EE007D3B97 /* SelectSoulbindView.swift */; };
-		E2FE910E25BF52FE007D3B97 /* SelectLegendaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE910D25BF52FE007D3B97 /* SelectLegendaryView.swift */; };
-		E2FE911325BF530D007D3B97 /* SelectStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE911225BF530D007D3B97 /* SelectStyleView.swift */; };
-		E2FE911925BF533D007D3B97 /* BISOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE911825BF533D007D3B97 /* BISOverviewView.swift */; };
-		E2FE911E25BF534C007D3B97 /* UsedTalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE911D25BF534C007D3B97 /* UsedTalentsView.swift */; };
-		E2FE912325BF5359007D3B97 /* UsedSoulbindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE912225BF5359007D3B97 /* UsedSoulbindView.swift */; };
-		E2FE912825BF5368007D3B97 /* UsedLegendaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE912725BF5368007D3B97 /* UsedLegendaryView.swift */; };
-		E2FE912D25BF537F007D3B97 /* BISItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE912C25BF537F007D3B97 /* BISItemView.swift */; };
 		E2FE913225BF58E2007D3B97 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913125BF58E2007D3B97 /* Player.swift */; };
 		E2FE913725BF5ABF007D3B97 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913625BF5ABF007D3B97 /* Enums.swift */; };
 		E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913B25BF62D8007D3B97 /* TalentTree.swift */; };
@@ -61,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E279DFED25C0896B00D5CCFA /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
+		E279E00425C0C9E500D5CCFA /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		E2FE907A25BF4782007D3B97 /* WoWTankSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTankSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FE907D25BF4782007D3B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,17 +80,6 @@
 		E2FE90E325BF50EC007D3B97 /* UsedSoulbindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedSoulbindViewController.swift; sourceTree = "<group>"; };
 		E2FE90E825BF50FA007D3B97 /* UsedLegendaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedLegendaryViewController.swift; sourceTree = "<group>"; };
 		E2FE90ED25BF510F007D3B97 /* BISItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISItemViewController.swift; sourceTree = "<group>"; };
-		E2FE90F925BF52BD007D3B97 /* SelectClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectClassView.swift; sourceTree = "<group>"; };
-		E2FE90FE25BF52CF007D3B97 /* SelectGearSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGearSourceView.swift; sourceTree = "<group>"; };
-		E2FE910325BF52DB007D3B97 /* SelectTalentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTalentsView.swift; sourceTree = "<group>"; };
-		E2FE910825BF52EE007D3B97 /* SelectSoulbindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSoulbindView.swift; sourceTree = "<group>"; };
-		E2FE910D25BF52FE007D3B97 /* SelectLegendaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLegendaryView.swift; sourceTree = "<group>"; };
-		E2FE911225BF530D007D3B97 /* SelectStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStyleView.swift; sourceTree = "<group>"; };
-		E2FE911825BF533D007D3B97 /* BISOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISOverviewView.swift; sourceTree = "<group>"; };
-		E2FE911D25BF534C007D3B97 /* UsedTalentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedTalentsView.swift; sourceTree = "<group>"; };
-		E2FE912225BF5359007D3B97 /* UsedSoulbindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedSoulbindView.swift; sourceTree = "<group>"; };
-		E2FE912725BF5368007D3B97 /* UsedLegendaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedLegendaryView.swift; sourceTree = "<group>"; };
-		E2FE912C25BF537F007D3B97 /* BISItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BISItemView.swift; sourceTree = "<group>"; };
 		E2FE913125BF58E2007D3B97 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E2FE913625BF5ABF007D3B97 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		E2FE913B25BF62D8007D3B97 /* TalentTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentTree.swift; sourceTree = "<group>"; };
@@ -183,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FE913625BF5ABF007D3B97 /* Enums.swift */,
+				E279DFED25C0896B00D5CCFA /* UIElements.swift */,
 				E2FE90B025BF485A007D3B97 /* WoWTankSim.entitlements */,
 				E2FE907D25BF4782007D3B97 /* AppDelegate.swift */,
 				E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */,
@@ -193,6 +176,14 @@
 			sourceTree = "<group>";
 		};
 		E2FE90B825BF494D007D3B97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E279E00425C0C9E500D5CCFA /* PlayerController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2FE90B925BF4955007D3B97 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				E2FE90BB25BF4FF3007D3B97 /* SelectClassViewController.swift */,
@@ -206,15 +197,6 @@
 				E2FE90E325BF50EC007D3B97 /* UsedSoulbindViewController.swift */,
 				E2FE90E825BF50FA007D3B97 /* UsedLegendaryViewController.swift */,
 				E2FE90ED25BF510F007D3B97 /* BISItemViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		E2FE90B925BF4955007D3B97 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E2FE911725BF5314007D3B97 /* ResultViews */,
-				E2FE90F825BF529B007D3B97 /* SelectionViews */,
 				E2FE908325BF4782007D3B97 /* Main.storyboard */,
 				E2FE908825BF4783007D3B97 /* LaunchScreen.storyboard */,
 			);
@@ -229,31 +211,6 @@
 				E2FE913B25BF62D8007D3B97 /* TalentTree.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E2FE90F825BF529B007D3B97 /* SelectionViews */ = {
-			isa = PBXGroup;
-			children = (
-				E2FE90F925BF52BD007D3B97 /* SelectClassView.swift */,
-				E2FE90FE25BF52CF007D3B97 /* SelectGearSourceView.swift */,
-				E2FE910325BF52DB007D3B97 /* SelectTalentsView.swift */,
-				E2FE910825BF52EE007D3B97 /* SelectSoulbindView.swift */,
-				E2FE910D25BF52FE007D3B97 /* SelectLegendaryView.swift */,
-				E2FE911225BF530D007D3B97 /* SelectStyleView.swift */,
-			);
-			path = SelectionViews;
-			sourceTree = "<group>";
-		};
-		E2FE911725BF5314007D3B97 /* ResultViews */ = {
-			isa = PBXGroup;
-			children = (
-				E2FE911825BF533D007D3B97 /* BISOverviewView.swift */,
-				E2FE911D25BF534C007D3B97 /* UsedTalentsView.swift */,
-				E2FE912225BF5359007D3B97 /* UsedSoulbindView.swift */,
-				E2FE912725BF5368007D3B97 /* UsedLegendaryView.swift */,
-				E2FE912C25BF537F007D3B97 /* BISItemView.swift */,
-			);
-			path = ResultViews;
 			sourceTree = "<group>";
 		};
 		E2FE914025BF6E24007D3B97 /* Soulbinds */ = {
@@ -394,17 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2FE90FF25BF52CF007D3B97 /* SelectGearSourceView.swift in Sources */,
 				E2FE914225BF6E34007D3B97 /* Pelagos.swift in Sources */,
 				E2FE90D025BF506C007D3B97 /* SelectLegendaryViewController.swift in Sources */,
 				E2FE908225BF4782007D3B97 /* ViewController.swift in Sources */,
-				E2FE911925BF533D007D3B97 /* BISOverviewView.swift in Sources */,
-				E2FE912325BF5359007D3B97 /* UsedSoulbindView.swift in Sources */,
+				E279DFEE25C0896B00D5CCFA /* UIElements.swift in Sources */,
 				E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */,
-				E2FE910425BF52DB007D3B97 /* SelectTalentsView.swift in Sources */,
 				E2FE90CB25BF505B007D3B97 /* SelectSoulbindViewController.swift in Sources */,
 				E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */,
-				E2FE910E25BF52FE007D3B97 /* SelectLegendaryView.swift in Sources */,
 				E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */,
 				E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */,
 				E2FE90D525BF508A007D3B97 /* SelectStyleViewController.swift in Sources */,
@@ -413,15 +366,10 @@
 				E2FE90DF25BF50D7007D3B97 /* UsedTalentsViewController.swift in Sources */,
 				E2FE90EE25BF510F007D3B97 /* BISItemViewController.swift in Sources */,
 				E2FE913725BF5ABF007D3B97 /* Enums.swift in Sources */,
-				E2FE911E25BF534C007D3B97 /* UsedTalentsView.swift in Sources */,
-				E2FE912D25BF537F007D3B97 /* BISItemView.swift in Sources */,
 				E2FE913225BF58E2007D3B97 /* Player.swift in Sources */,
-				E2FE912825BF5368007D3B97 /* UsedLegendaryView.swift in Sources */,
 				E2FE90C125BF5029007D3B97 /* SelectGearSourceViewController.swift in Sources */,
-				E2FE910925BF52EE007D3B97 /* SelectSoulbindView.swift in Sources */,
-				E2FE911325BF530D007D3B97 /* SelectStyleView.swift in Sources */,
 				E2FE90C625BF5041007D3B97 /* SelectTalentsViewController.swift in Sources */,
-				E2FE90FA25BF52BD007D3B97 /* SelectClassView.swift in Sources */,
+				E279E00525C0C9E500D5CCFA /* PlayerController.swift in Sources */,
 				E2FE90BC25BF4FF3007D3B97 /* SelectClassViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
 				INFOPLIST_FILE = WoWTankSim/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,6 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8825K9HH49;
 				INFOPLIST_FILE = WoWTankSim/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
