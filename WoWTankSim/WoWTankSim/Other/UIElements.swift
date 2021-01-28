@@ -50,3 +50,11 @@ func createHeader(xPos: Int, text1: String, text2: String? = nil) -> UIView {
 
     return headerView
 }
+
+func createLabel(text: String) -> UILabel {
+    let label = UILabel()
+    label.text = text
+    label.translatesAutoresizingMaskIntoConstraints = false
+
+    return label
+}
