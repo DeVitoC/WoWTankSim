@@ -18,6 +18,7 @@ class SelectClassViewController: UIViewController {
     }
 
     func setupUIElements() {
+        // Create UI Elements
         let header = createHeader(xPos: Int(view.frame.width/2 - 125), text1: "Welcome!", text2: "Click a Class Below to Sim")
         let paladinButton = createButton(text: "PALADIN")
         let warriorButton = createButton(text: "WARRIOR")
@@ -26,11 +27,11 @@ class SelectClassViewController: UIViewController {
         let druidButton = createButton(text: "DRUID")
         let monkButton = createButton(text: "MONK")
         let importButton = createButton(text: "IMPORT YOUR CHARACTER")
-        let buttonStackView = UIStackView(arrangedSubviews: [dkButton, dhButton, druidButton, monkButton, paladinButton, warriorButton, importButton])
+        let buttonStackView = UIStackView(arrangedSubviews: [dhButton, dkButton, druidButton, monkButton, paladinButton, warriorButton, importButton])
 
+        // Add elements to UI with constraints
         view.addSubview(header)
         view.addSubview(buttonStackView)
-
         NSLayoutConstraint.activate([
             header.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             header.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -38,6 +39,7 @@ class SelectClassViewController: UIViewController {
             buttonStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
+        // Add actions to buttons
         paladinButton.addTarget(self, action: #selector(clickSpec), for: .touchUpInside)
     }
 
