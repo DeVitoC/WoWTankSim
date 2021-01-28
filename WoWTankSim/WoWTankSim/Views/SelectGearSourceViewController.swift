@@ -164,6 +164,30 @@ class SelectGearSourceViewController: UIViewController {
 
             worldBossSwitch.topAnchor.constraint(equalTo: worldBossLabel.topAnchor),
             worldBossSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            normalDungeonSwitch.topAnchor.constraint(equalTo: normalDungeonLabel.topAnchor),
+            normalDungeonSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            heroicDungeonSwitch.topAnchor.constraint(equalTo: heroicDungeonLabel.topAnchor),
+            heroicDungeonSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            mythicDungeonSwitch.topAnchor.constraint(equalTo: mythicDungeonLabel.topAnchor),
+            mythicDungeonSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            mythicPlusSwitch.topAnchor.constraint(equalTo: mythicPlusLabel.topAnchor),
+            mythicPlusSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            honorSwitch.topAnchor.constraint(equalTo: honorLabel.topAnchor),
+            honorSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            conquestSwitch.topAnchor.constraint(equalTo: conquestLabel.topAnchor),
+            conquestSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            craftedSwitch.topAnchor.constraint(equalTo: craftedLabel.topAnchor),
+            craftedSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            boeSwitch.topAnchor.constraint(equalTo: boeLabel.topAnchor),
+            boeSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
         ])
     }
     
