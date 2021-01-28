@@ -61,7 +61,46 @@ class SelectGearSourceViewController: UIViewController {
         let craftedSwitch = createSwitch()
         let boeSwitch = createSwitch()
 
+        // Add Elements to UI
+        view.addSubview(header)
+        view.addSubview(raidLabel)
+        view.addSubview(lfrLabel)
+        view.addSubview(normalRaidLabel)
+        view.addSubview(heroicRaidLabel)
+        view.addSubview(mythicRaidLabel)
+        view.addSubview(worldBossLabel)
+        view.addSubview(lfrSwitch)
+        view.addSubview(normalRaidSwitch)
+        view.addSubview(heroicRaidSwitch)
+        view.addSubview(mythicRaidSwitch)
+        view.addSubview(worldBossSwitch)
+        view.addSubview(dungeonLabel)
+        view.addSubview(normalDungeonLabel)
+        view.addSubview(heroicDungeonLabel)
+        view.addSubview(mythicDungeonLabel)
+        view.addSubview(mythicPlusLabel)
+        view.addSubview(normalDungeonSwitch)
+        view.addSubview(heroicDungeonSwitch)
+        view.addSubview(mythicDungeonSwitch)
+        view.addSubview(mythicPlusSwitch)
+        view.addSubview(mythicPlusPicker)
+        view.addSubview(pvpLabel)
+        view.addSubview(honorLabel)
+        view.addSubview(conquestLabel)
+        view.addSubview(honorSwitch)
+        view.addSubview(conquestSwitch)
+        view.addSubview(craftedLabel)
+        view.addSubview(boeLabel)
+        view.addSubview(craftedSwitch)
+        view.addSubview(boeSwitch)
 
+        // Add constraints for UI elements
+        NSLayoutConstraint.activate([
+            header.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
+            header.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            raidLabel.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 20),
+            raidLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5)
+        ])
     }
     
 
