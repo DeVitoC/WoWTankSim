@@ -44,7 +44,7 @@ class SelectGearSourceViewController: UIViewController {
         let normalDungeonSwitch = createSwitch(6)
         let heroicDungeonSwitch = createSwitch(7)
         let mythicDungeonSwitch = createSwitch(8)
-        let mythicPlusSwitch = createSwitch(9)
+        mythicPlusSwitch = createSwitch(9)
 
         let mythicPlusPicker = UIPickerView(frame: CGRect(x: view.frame.width/2, y: view.frame.height/2, width: 150, height: 50))
 
@@ -206,6 +206,18 @@ class SelectGearSourceViewController: UIViewController {
         // Add actions to Switches and buttons
         nextButton.addTarget(self, action: #selector(clickNext), for: .touchUpInside)
         lfrSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        normalRaidSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        heroicRaidSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        mythicRaidSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        normalDungeonSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        heroicDungeonSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        mythicDungeonSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        mythicPlusSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        worldBossSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        honorSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        conquestSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        craftedSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+        boeSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
     }
 
     @objc func clickNext(_ sender: UIButton) {
