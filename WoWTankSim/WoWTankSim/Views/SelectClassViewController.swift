@@ -41,6 +41,14 @@ class SelectClassViewController: UIViewController {
 
         // Add actions to buttons
         paladinButton.addTarget(self, action: #selector(clickSpec), for: .touchUpInside)
+
+        // Add tags to buttons to reference them
+        dhButton.tag = 1
+        dkButton.tag = 2
+        druidButton.tag = 3
+        monkButton.tag = 4
+        paladinButton.tag = 5
+        warriorButton.tag = 6
     }
 
     @objc func clickSpec(_ sender: Any) {
