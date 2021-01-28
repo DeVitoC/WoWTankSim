@@ -22,25 +22,25 @@ class SelectGearSourceViewController: UIViewController {
         let header = createHeader(xPos: Int(view.frame.width/2 - 125),
                                   text1: "Select Your Sources of Gear")
 
-        let raidLabel = UILabel()
-        let lfrLabel = UILabel()
-        let normalRaidLabel = UILabel()
-        let heroicRaidLabel = UILabel()
-        let mythicRaidLabel = UILabel()
-        let worldBossLabel = UILabel()
+        let raidLabel = createLabel(text: "Raid: ")
+        let lfrLabel = createLabel(text: "LFR: ")
+        let normalRaidLabel = createLabel(text: "Normal: ")
+        let heroicRaidLabel = createLabel(text: "Heroic: ")
+        let mythicRaidLabel = createLabel(text: "Mythic: ")
+        let worldBossLabel = createLabel(text: "World Bosses: ")
 
-        let dungeonLabel = UILabel()
-        let normalDungeonLabel = UILabel()
-        let heroicDungeonLabel = UILabel()
-        let mythicDungeonLabel = UILabel()
-        let mythicPlusLabel = UILabel()
+        let dungeonLabel = createLabel(text: "Dungeons: ")
+        let normalDungeonLabel = createLabel(text: "Normal: ")
+        let heroicDungeonLabel = createLabel(text: "Heroic: ")
+        let mythicDungeonLabel = createLabel(text: "Mythic: ")
+        let mythicPlusLabel = createLabel(text: "Mythic+: ")
 
-        let pvpLabel = UILabel()
-        let honorLabel = UILabel()
-        let conquestLabel = UILabel()
+        let pvpLabel = createLabel(text: "PVP: ")
+        let honorLabel = createLabel(text: "Honor: ")
+        let conquestLabel = createLabel(text: "Conquest: ")
 
-        let craftedLabel = UILabel()
-        let boeLabel = UILabel()
+        let craftedLabel = createLabel(text: "Crafted: ")
+        let boeLabel = createLabel(text: "BOE: ")
 
 
     }
