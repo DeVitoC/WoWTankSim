@@ -7,7 +7,13 @@
 
 import UIKit
 
-func createButton(text: String, bgColor: UIColor = .purple) -> UIButton {
+// MARK: - Constants
+let mainColor = UIColor.purple
+let secondColor = UIColor.systemIndigo
+let groupSpace: CGFloat = 15
+let smallSpace: CGFloat = 5
+
+func createButton(text: String, bgColor: UIColor = mainColor) -> UIButton {
     let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
     button.translatesAutoresizingMaskIntoConstraints = false
     button.setTitle(text, for: .normal)
@@ -17,7 +23,7 @@ func createButton(text: String, bgColor: UIColor = .purple) -> UIButton {
     return button
 }
 
-func createHeader(xPos: Int, text1: String, text2: String?) -> UIView {
+func createHeader(xPos: Int, text1: String, text2: String? = nil) -> UIView {
     let headerView = UIView(frame: CGRect(x: xPos, y: 80, width: 250, height: 70))
     let label1 = UILabel()
     let label2 = UILabel()
@@ -27,7 +33,7 @@ func createHeader(xPos: Int, text1: String, text2: String?) -> UIView {
     label1.translatesAutoresizingMaskIntoConstraints = false
     stackView.translatesAutoresizingMaskIntoConstraints = false
 
-    headerView.backgroundColor = .systemIndigo
+    headerView.backgroundColor = secondColor
     label1.tintColor = .black
     label1.text = text1
     stackView.axis = .vertical
@@ -49,4 +55,23 @@ func createHeader(xPos: Int, text1: String, text2: String?) -> UIView {
 
 
     return headerView
+}
+
+func createLabel(text: String) -> UILabel {
+    let label = UILabel()
+    label.text = text
+    label.translatesAutoresizingMaskIntoConstraints = false
+
+    return label
+}
+
+func createSwitch(_ tag: Int) -> UISwitch {
+    let switch1 = UISwitch(frame: CGRect(x: 0, y: 0, width: 30, height: 15))
+    switch1.translatesAutoresizingMaskIntoConstraints = false
+    switch1.isOn = false
+    switch1.onTintColor = mainColor
+    switch1.set(width: 30, height: 20)
+    switch1.tag = tag
+
+    return switch1
 }

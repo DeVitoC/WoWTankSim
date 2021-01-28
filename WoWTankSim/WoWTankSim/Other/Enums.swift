@@ -12,7 +12,7 @@ enum Spec {
     case ProtectionPaladin, ProtectionWarrior
 }
 
-enum Source {
+enum Source: Comparable {
     case RaidLFR, RaidNormal, RaidHeroic, RaidMythic
     case WorldBosses
     case DungeonNormal, DungeonHeroic, DungeonMythic

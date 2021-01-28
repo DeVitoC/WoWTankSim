@@ -9,9 +9,23 @@ import Foundation
 
 class PlayerController {
 
-    func addPlayer(spec: Spec) -> Player {
-        let player = Player(spec)
+    var player: Player?
 
-        return player
+    func addPlayer(spec: Spec) {
+        player = Player(spec)
+    }
+
+    func addSource(source: Source) {
+        guard let player = player else {
+            return
+        }
+        player.source.append(source)
+    }
+
+    func removeSource(source: Source) {
+        guard let player = player else {
+            return
+        }
+        player.source.removeAll(where: {$0 == source})
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E279DFEE25C0896B00D5CCFA /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279DFED25C0896B00D5CCFA /* UIElements.swift */; };
 		E279E00525C0C9E500D5CCFA /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279E00425C0C9E500D5CCFA /* PlayerController.swift */; };
+		E2DD415B25C3516300C600EF /* UISwitch+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD415A25C3516300C600EF /* UISwitch+size.swift */; };
 		E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907D25BF4782007D3B97 /* AppDelegate.swift */; };
 		E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */; };
 		E2FE908225BF4782007D3B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE908125BF4782007D3B97 /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		E279DFED25C0896B00D5CCFA /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
 		E279E00425C0C9E500D5CCFA /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		E2DD415A25C3516300C600EF /* UISwitch+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+size.swift"; sourceTree = "<group>"; };
 		E2FE907A25BF4782007D3B97 /* WoWTankSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTankSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FE907D25BF4782007D3B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */,
 				E2FE908625BF4783007D3B97 /* Assets.xcassets */,
 				E2FE908B25BF4783007D3B97 /* Info.plist */,
+				E2DD415A25C3516300C600EF /* UISwitch+size.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2FE914225BF6E34007D3B97 /* Pelagos.swift in Sources */,
+				E2DD415B25C3516300C600EF /* UISwitch+size.swift in Sources */,
 				E2FE90D025BF506C007D3B97 /* SelectLegendaryViewController.swift in Sources */,
 				E2FE908225BF4782007D3B97 /* ViewController.swift in Sources */,
 				E279DFEE25C0896B00D5CCFA /* UIElements.swift in Sources */,
