@@ -94,7 +94,6 @@ class SelectClassViewController: UIViewController {
             player = playerController.addPlayer(spec: .Brewmaster)
         case 5:
             player = playerController.addPlayer(spec: .ProtectionPaladin)
-            NSLog("\(player?.spec ?? Spec.Brewmaster)")
         case 6:
             player = playerController.addPlayer(spec: .ProtectionWarrior)
         default:
