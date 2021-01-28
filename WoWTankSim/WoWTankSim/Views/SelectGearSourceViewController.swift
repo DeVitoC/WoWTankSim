@@ -14,11 +14,11 @@ class SelectGearSourceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUIElements()
     }
 
     func setupUIElements() {
+        // Create UI elements
         let header = createHeader(xPos: Int(view.frame.width/2 - 125),
                                   text1: "Select Your Sources of Gear")
 
@@ -45,6 +45,8 @@ class SelectGearSourceViewController: UIViewController {
         let heroicDungeonSwitch = createSwitch()
         let mythicDungeonSwitch = createSwitch()
         let mythicPlusSwitch = createSwitch()
+
+        let mythicPlusPicker = UIPickerView()
 
         let pvpLabel = createLabel(text: "PVP: ")
         let honorLabel = createLabel(text: "Honor: ")
