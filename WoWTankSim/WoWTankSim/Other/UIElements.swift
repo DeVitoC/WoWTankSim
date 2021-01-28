@@ -17,7 +17,7 @@ func createButton(text: String, bgColor: UIColor = .purple) -> UIButton {
     return button
 }
 
-func createHeader(xPos: Int, text1: String, text2: String?) -> UIView {
+func createHeader(xPos: Int, text1: String, text2: String? = nil) -> UIView {
     let headerView = UIView(frame: CGRect(x: xPos, y: 80, width: 250, height: 70))
     let label1 = UILabel()
     let label2 = UILabel()
