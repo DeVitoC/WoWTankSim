@@ -94,12 +94,76 @@ class SelectGearSourceViewController: UIViewController {
         view.addSubview(craftedSwitch)
         view.addSubview(boeSwitch)
 
-        // Add constraints for UI elements
+        // Add constraints for header and labels
         NSLayoutConstraint.activate([
             header.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             header.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+
             raidLabel.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 20),
-            raidLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5)
+            raidLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            lfrLabel.topAnchor.constraint(equalTo: raidLabel.bottomAnchor),
+            lfrLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            normalRaidLabel.topAnchor.constraint(equalTo: lfrLabel.bottomAnchor),
+            normalRaidLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            heroicRaidLabel.topAnchor.constraint(equalTo: normalRaidLabel.bottomAnchor),
+            heroicRaidLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            mythicRaidLabel.topAnchor.constraint(equalTo: heroicRaidLabel.bottomAnchor),
+            mythicRaidLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            worldBossLabel.topAnchor.constraint(equalTo: mythicRaidLabel.bottomAnchor, constant: groupSpace),
+            worldBossLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            dungeonLabel.topAnchor.constraint(equalTo: worldBossLabel.bottomAnchor, constant: groupSpace),
+            dungeonLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            normalDungeonLabel.topAnchor.constraint(equalTo: dungeonLabel.bottomAnchor),
+            normalDungeonLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            heroicDungeonLabel.topAnchor.constraint(equalTo: normalDungeonLabel.bottomAnchor),
+            heroicDungeonLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            mythicDungeonLabel.topAnchor.constraint(equalTo: heroicDungeonLabel.bottomAnchor),
+            mythicDungeonLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            mythicPlusLabel.topAnchor.constraint(equalTo: mythicDungeonLabel.bottomAnchor),
+            mythicPlusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            pvpLabel.topAnchor.constraint(equalTo: mythicPlusLabel.bottomAnchor, constant: groupSpace),
+            pvpLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            honorLabel.topAnchor.constraint(equalTo: pvpLabel.bottomAnchor),
+            honorLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            conquestLabel.topAnchor.constraint(equalTo: honorLabel.bottomAnchor),
+            conquestLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            craftedLabel.topAnchor.constraint(equalTo: conquestLabel.bottomAnchor, constant: groupSpace),
+            craftedLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+
+            boeLabel.topAnchor.constraint(equalTo: craftedLabel.bottomAnchor),
+            boeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: smallSpace),
+        ])
+
+        // Add constraints for Switches
+        NSLayoutConstraint.activate([
+            lfrSwitch.topAnchor.constraint(equalTo: lfrLabel.topAnchor),
+            lfrSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            normalRaidSwitch.topAnchor.constraint(equalTo: normalRaidLabel.topAnchor),
+            normalRaidSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            heroicRaidSwitch.topAnchor.constraint(equalTo: heroicRaidLabel.topAnchor),
+            heroicRaidSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            mythicRaidSwitch.topAnchor.constraint(equalTo: mythicRaidLabel.topAnchor),
+            mythicRaidSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+
+            worldBossSwitch.topAnchor.constraint(equalTo: worldBossLabel.topAnchor),
+            worldBossSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
         ])
     }
     
