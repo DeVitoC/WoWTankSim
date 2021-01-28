@@ -10,6 +10,8 @@ import UIKit
 // MARK: - Constants
 let mainColor = UIColor.purple
 let secondColor = UIColor.systemIndigo
+let groupSpace: CGFloat = 15
+let smallSpace: CGFloat = 5
 
 func createButton(text: String, bgColor: UIColor = mainColor) -> UIButton {
     let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
@@ -64,10 +66,11 @@ func createLabel(text: String) -> UILabel {
 }
 
 func createSwitch() -> UISwitch {
-    let switch1 = UISwitch()
+    let switch1 = UISwitch(frame: CGRect(x: 0, y: 0, width: 30, height: 15))
     switch1.translatesAutoresizingMaskIntoConstraints = false
     switch1.isOn = false
     switch1.onTintColor = mainColor
+    switch1.set(width: 30, height: 20)
 
     return switch1
 }
