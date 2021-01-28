@@ -11,6 +11,8 @@ class SelectGearSourceViewController: UIViewController {
 
     var playerController = PlayerController()
     let mythicPlusLevels = ["M+ Level", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15+"]
+    var mPlusLevel: Int = 1
+    var mythicPlusSwitch: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -244,7 +246,13 @@ class SelectGearSourceViewController: UIViewController {
         case 8:
             source = .DungeonMythic
         case 9:
-            source = .DungeonMythicPlus(2)
+            if mPlusLevel == 1 {
+                // Add a notification here
+                sender.setOn(false, animated: true)
+                return
+            } else {
+                source = .DungeonMythicPlus(mPlusLevel)
+            }
         case 10:
             source = .PVPHonor
         case 11:
@@ -282,7 +290,22 @@ extension SelectGearSourceViewController: UIPickerViewDelegate {
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        NSLog("Temp")
+        guard let player = playerController.player else {
+            NSLog("Player object is nil")
+            return
+        }
+
+        if player.source.contains(.DungeonMythicPlus(mPlusLevel)) {
+            if row == 0 {
+                playerController.removeSource(source: .DungeonMythicPlus(mPlusLevel))
+                mythicPlusSwitch.setOn(false, animated: true)
+            } else {
+                playerController.removeSource(source: .DungeonMythicPlus(mPlusLevel))
+                playerController.addSource(source: .DungeonMythicPlus(row + 1))
+            }
+        }
+
+        mPlusLevel = row + 1
     }
 }
 
