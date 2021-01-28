@@ -19,24 +19,53 @@ class SelectClassViewController: UIViewController {
 
     func setupUIElements() {
         // Create UI Elements
-        let header = createHeader(xPos: Int(view.frame.width/2 - 125), text1: "Welcome!", text2: "Click a Class Below to Sim")
-        let paladinButton = createButton(text: "PALADIN")
-        let warriorButton = createButton(text: "WARRIOR")
-        let dkButton = createButton(text: "DEATH KNIGHT")
+        let header = createHeader(xPos: Int(view.frame.width/2 - 125),
+                                  text1: "Welcome!",
+                                  text2: "Click a Class Below to Sim")
         let dhButton = createButton(text: "DEMON HUNTER")
+        let dkButton = createButton(text: "DEATH KNIGHT")
         let druidButton = createButton(text: "DRUID")
         let monkButton = createButton(text: "MONK")
+        let paladinButton = createButton(text: "PALADIN")
+        let warriorButton = createButton(text: "WARRIOR")
         let importButton = createButton(text: "IMPORT YOUR CHARACTER")
-        let buttonStackView = UIStackView(arrangedSubviews: [dhButton, dkButton, druidButton, monkButton, paladinButton, warriorButton, importButton])
 
-        // Add elements to UI with constraints
+        // Temporarily tint disabled buttons gray
+        dhButton.backgroundColor = .gray
+        dkButton.backgroundColor = .gray
+        druidButton.backgroundColor = .gray
+        monkButton.backgroundColor = .gray
+        warriorButton.backgroundColor = .gray
+        importButton.backgroundColor = .gray
+
+        // Add elements to UI
         view.addSubview(header)
-        view.addSubview(buttonStackView)
+        view.addSubview(dhButton)
+        view.addSubview(dkButton)
+        view.addSubview(druidButton)
+        view.addSubview(monkButton)
+        view.addSubview(paladinButton)
+        view.addSubview(warriorButton)
+        view.addSubview(importButton)
+
+        // Add constraints for ui elements
         NSLayoutConstraint.activate([
             header.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             header.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            buttonStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            buttonStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            dhButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            dhButton.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 20),
+            dkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            dkButton.topAnchor.constraint(equalTo: dhButton.bottomAnchor, constant: 10),
+            druidButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            druidButton.topAnchor.constraint(equalTo: dkButton.bottomAnchor, constant: 10),
+            monkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            monkButton.topAnchor.constraint(equalTo: druidButton.bottomAnchor, constant: 10),
+            paladinButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            paladinButton.topAnchor.constraint(equalTo: monkButton.bottomAnchor, constant: 10),
+            warriorButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            warriorButton.topAnchor.constraint(equalTo: paladinButton.bottomAnchor, constant: 10),
+            importButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            importButton.topAnchor.constraint(equalTo: warriorButton.bottomAnchor, constant: 10),
         ])
 
         // Add actions to buttons
