@@ -11,6 +11,7 @@ class SelectClassViewController: UIViewController {
 
     // MARK: - Properties
     let playerController = PlayerController()
+    var player: Player?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +82,24 @@ class SelectClassViewController: UIViewController {
         importButton.tag = 7
     }
 
-    @objc func clickSpec(_ sender: Any) {
+    @objc func clickSpec(_ sender: UIButton) {
+        switch sender.tag {
+        case 1:
+            player = playerController.addPlayer(spec: .Vengeance)
+        case 2:
+            player = playerController.addPlayer(spec: .Blood)
+        case 3:
+            player = playerController.addPlayer(spec: .Guardian)
+        case 4:
+            player = playerController.addPlayer(spec: .Brewmaster)
+        case 5:
+            player = playerController.addPlayer(spec: .ProtectionPaladin)
+            NSLog("\(player?.spec ?? Spec.Brewmaster)")
+        case 6:
+            player = playerController.addPlayer(spec: .ProtectionWarrior)
+        default:
+            NSLog("Not a valid spec")
+        }
         performSegue(withIdentifier: "SelectSourceSegue", sender: self)
     }
     
@@ -93,7 +111,7 @@ class SelectClassViewController: UIViewController {
         if segue.identifier == "SelectSourceSegue" {
             guard let destinationVC = segue.destination as? SelectGearSourceViewController else { return }
 
-            destinationVC.player = playerController.addPlayer(spec: Spec.ProtectionPaladin)
+            destinationVC.player = player
         }
     }
 
