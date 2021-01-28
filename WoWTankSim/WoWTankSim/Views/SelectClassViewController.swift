@@ -49,6 +49,7 @@ class SelectClassViewController: UIViewController {
         monkButton.tag = 4
         paladinButton.tag = 5
         warriorButton.tag = 6
+        importButton.tag = 7
     }
 
     @objc func clickSpec(_ sender: Any) {
