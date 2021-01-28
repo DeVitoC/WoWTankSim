@@ -29,11 +29,11 @@ class SelectGearSourceViewController: UIViewController {
         let mythicRaidLabel = createLabel(text: "Mythic: ")
         let worldBossLabel = createLabel(text: "World Bosses: ")
 
-        let lfrSwitch = createSwitch()
-        let normalRaidSwitch = createSwitch()
-        let heroicRaidSwitch = createSwitch()
-        let mythicRaidSwitch = createSwitch()
-        let worldBossSwitch = createSwitch()
+        let lfrSwitch = createSwitch(1)
+        let normalRaidSwitch = createSwitch(2)
+        let heroicRaidSwitch = createSwitch(3)
+        let mythicRaidSwitch = createSwitch(4)
+        let worldBossSwitch = createSwitch(5)
 
         let dungeonLabel = createLabel(text: "Dungeons: ")
         let normalDungeonLabel = createLabel(text: "Normal: ")
@@ -41,10 +41,10 @@ class SelectGearSourceViewController: UIViewController {
         let mythicDungeonLabel = createLabel(text: "Mythic: ")
         let mythicPlusLabel = createLabel(text: "Mythic+: ")
 
-        let normalDungeonSwitch = createSwitch()
-        let heroicDungeonSwitch = createSwitch()
-        let mythicDungeonSwitch = createSwitch()
-        let mythicPlusSwitch = createSwitch()
+        let normalDungeonSwitch = createSwitch(6)
+        let heroicDungeonSwitch = createSwitch(7)
+        let mythicDungeonSwitch = createSwitch(8)
+        let mythicPlusSwitch = createSwitch(9)
 
         let mythicPlusPicker = UIPickerView()
 
@@ -52,14 +52,16 @@ class SelectGearSourceViewController: UIViewController {
         let honorLabel = createLabel(text: "Honor: ")
         let conquestLabel = createLabel(text: "Conquest: ")
 
-        let honorSwitch = createSwitch()
-        let conquestSwitch = createSwitch()
+        let honorSwitch = createSwitch(10)
+        let conquestSwitch = createSwitch(11)
 
         let craftedLabel = createLabel(text: "Crafted: ")
         let boeLabel = createLabel(text: "BOE: ")
 
-        let craftedSwitch = createSwitch()
-        let boeSwitch = createSwitch()
+        let craftedSwitch = createSwitch(12)
+        let boeSwitch = createSwitch(13)
+
+        let nextButton = createButton(text: "NEXT")
 
         // Add Elements to UI
         view.addSubview(header)
