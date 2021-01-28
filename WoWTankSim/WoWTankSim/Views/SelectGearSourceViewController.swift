@@ -46,7 +46,7 @@ class SelectGearSourceViewController: UIViewController {
         let mythicDungeonSwitch = createSwitch(8)
         let mythicPlusSwitch = createSwitch(9)
 
-        let mythicPlusPicker = UIPickerView()
+        let mythicPlusPicker = UIPickerView(frame: CGRect(x: view.frame.width/2, y: view.frame.height/2, width: 150, height: 50))
 
         let pvpLabel = createLabel(text: "PVP: ")
         let honorLabel = createLabel(text: "Honor: ")
@@ -95,6 +95,11 @@ class SelectGearSourceViewController: UIViewController {
         view.addSubview(boeLabel)
         view.addSubview(craftedSwitch)
         view.addSubview(boeSwitch)
+        view.addSubview(nextButton)
+
+        // Setup PickerView
+        mythicPlusPicker.dataSource = self
+        mythicPlusPicker.delegate = self
 
         // Add constraints for header and labels
         NSLayoutConstraint.activate([
@@ -194,14 +199,33 @@ class SelectGearSourceViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if segue.identifier == "SelectTalentsSegue" {
+            guard let destinationVC = segue.destination as? SelectTalentsViewController else { return }
 
+            destinationVC.playerController = playerController
+        }
+    }
+
+}
+
+extension SelectGearSourceViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        "\(mythicPlusLevels[row])"
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        NSLog("Temp")
+    }
+}
+
+extension SelectGearSourceViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        14
+    }
 }
