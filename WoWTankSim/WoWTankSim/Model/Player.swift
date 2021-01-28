@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Player {
+class Player {
     var spec: Spec
     var source: [Source]
     var talents: TalentTree
