@@ -7,7 +7,11 @@
 
 import UIKit
 
-func createButton(text: String, bgColor: UIColor = .purple) -> UIButton {
+// MARK: - Constants
+let mainColor = UIColor.purple
+let secondColor = UIColor.systemIndigo
+
+func createButton(text: String, bgColor: UIColor = mainColor) -> UIButton {
     let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
     button.translatesAutoresizingMaskIntoConstraints = false
     button.setTitle(text, for: .normal)
@@ -27,7 +31,7 @@ func createHeader(xPos: Int, text1: String, text2: String? = nil) -> UIView {
     label1.translatesAutoresizingMaskIntoConstraints = false
     stackView.translatesAutoresizingMaskIntoConstraints = false
 
-    headerView.backgroundColor = .systemIndigo
+    headerView.backgroundColor = secondColor
     label1.tintColor = .black
     label1.text = text1
     stackView.axis = .vertical
@@ -57,4 +61,13 @@ func createLabel(text: String) -> UILabel {
     label.translatesAutoresizingMaskIntoConstraints = false
 
     return label
+}
+
+func createSwitch() -> UISwitch {
+    let switch1 = UISwitch()
+    switch1.translatesAutoresizingMaskIntoConstraints = false
+    switch1.isOn = false
+    switch1.onTintColor = mainColor
+
+    return switch1
 }
