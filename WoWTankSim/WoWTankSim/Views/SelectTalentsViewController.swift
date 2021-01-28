@@ -9,6 +9,8 @@ import UIKit
 
 class SelectTalentsViewController: UIViewController {
 
+    var playerController: PlayerController?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
