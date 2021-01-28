@@ -65,12 +65,13 @@ func createLabel(text: String) -> UILabel {
     return label
 }
 
-func createSwitch() -> UISwitch {
+func createSwitch(_ tag: Int) -> UISwitch {
     let switch1 = UISwitch(frame: CGRect(x: 0, y: 0, width: 30, height: 15))
     switch1.translatesAutoresizingMaskIntoConstraints = false
     switch1.isOn = false
     switch1.onTintColor = mainColor
     switch1.set(width: 30, height: 20)
+    switch1.tag = tag
 
     return switch1
 }
