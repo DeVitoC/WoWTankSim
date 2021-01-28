@@ -194,8 +194,62 @@ class SelectGearSourceViewController: UIViewController {
             craftedSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
 
             boeSwitch.topAnchor.constraint(equalTo: boeLabel.topAnchor),
-            boeSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace),
+            boeSwitch.leadingAnchor.constraint(equalTo: worldBossLabel.trailingAnchor, constant: smallSpace)
         ])
+
+        // Constraints for Next Button
+        NSLayoutConstraint.activate([
+            nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
+
+        // Add actions to Switches and buttons
+        nextButton.addTarget(self, action: #selector(clickNext), for: .touchUpInside)
+        lfrSwitch.addTarget(self, action: #selector(clickSwitch), for: .touchUpInside)
+    }
+
+    @objc func clickNext(_ sender: UIButton) {
+        performSegue(withIdentifier: "SelectTalentsSegue", sender: self)
+    }
+
+    @objc func clickSwitch(_ sender: UISwitch) {
+        var source: Source
+        switch sender.tag {
+        case 1:
+            source = .RaidLFR
+        case 2:
+            source = .RaidNormal
+        case 3:
+            source = .RaidHeroic
+        case 4:
+            source = .RaidMythic
+        case 5:
+            source = .WorldBosses
+        case 6:
+            source = .DungeonNormal
+        case 7:
+            source = .DungeonHeroic
+        case 8:
+            source = .DungeonMythic
+        case 9:
+            source = .DungeonMythicPlus(2)
+        case 10:
+            source = .PVPHonor
+        case 11:
+            source = .PVPConquest
+        case 12:
+            source = .Crafted
+        case 13:
+            source = .BOE
+        default:
+            fatalError("Not a valid source for gear")
+        }
+
+        if sender.isOn {
+            playerController.addSource(source: source)
+        } else {
+            playerController.removeSource(source: source)
+        }
     }
     
 
