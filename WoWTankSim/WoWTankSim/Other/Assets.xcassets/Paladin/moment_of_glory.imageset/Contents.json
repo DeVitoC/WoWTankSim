@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "moment_of_glory.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

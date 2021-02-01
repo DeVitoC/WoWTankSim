@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "hand_of_the_protector.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "holy_shield.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

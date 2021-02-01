@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "blessed_hammer.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

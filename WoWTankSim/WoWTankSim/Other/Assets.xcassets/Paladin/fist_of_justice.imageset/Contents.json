@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "fist_of_justice.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
