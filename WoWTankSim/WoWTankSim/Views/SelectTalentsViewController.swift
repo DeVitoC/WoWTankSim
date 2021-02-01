@@ -21,8 +21,108 @@ class SelectTalentsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setSpec()
+        setUpUIElements()
+    }
 
-        // Do any additional setup after loading the view.
+    func setSpec() {
+        guard let player = playerController?.player else { return }
+        switch player.spec {
+        case .Blood:
+            spec = Blood()
+        case .Vengeance:
+            spec = Vengeance()
+        case .Guardian:
+            spec = Guardian()
+        case .Brewmaster:
+            spec = Brewmaster()
+        case .ProtectionPaladin:
+            spec = ProtectionPaladin()
+        case .ProtectionWarrior:
+            spec = ProtectionWarrior()
+        }
+    }
+
+    func setUpUIElements() {
+        // Create UI elements
+        let header = createHeader(xPos: Int(view.frame.width/2 - 125),
+                                  text1: "Select Your Talents")
+        let talentStack = createStackView(axis: .vertical)
+        let rowFifteenStack = createTalentRow(tag1: 0, tag2: 1, tag3: 2)
+        let rowTwentyFiveStack = createTalentRow(tag1: 3, tag2: 4, tag3: 5)
+        let rowThirtyStack = createTalentRow(tag1: 6, tag2: 7, tag3: 8)
+        let rowThirtyFiveStack = createTalentRow(tag1: 9, tag2: 10, tag3: 11)
+        let rowFortyStack = createTalentRow(tag1: 12, tag2: 13, tag3: 14)
+        let rowFortyFiveStack = createTalentRow(tag1: 15, tag2: 16, tag3: 17)
+        let rowFiftyStack = createTalentRow(tag1: 18, tag2: 19, tag3: 20)
+
+
+        let nextButton = createButton(text: "NEXT")
+
+        // Set translates mask to false
+
+        // Add Elements to UI
+        view.addSubview(header)
+        view.addSubview(talentStack)
+        view.addSubview(nextButton)
+        talentStack.addArrangedSubview(rowFifteenStack)
+        talentStack.addArrangedSubview(rowTwentyFiveStack)
+        talentStack.addArrangedSubview(rowThirtyStack)
+        talentStack.addArrangedSubview(rowThirtyFiveStack)
+        talentStack.addArrangedSubview(rowFortyStack)
+        talentStack.addArrangedSubview(rowFortyFiveStack)
+        talentStack.addArrangedSubview(rowFiftyStack)
+
+        // talentStack settings
+        talentStack.axis = .vertical
+        talentStack.alignment = .fill
+        talentStack.distribution = .fillEqually
+        talentStack.spacing = smallSpace
+
+        // Add Constraints for UI elements
+        NSLayoutConstraint.activate([
+            header.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
+            header.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+
+            talentStack.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 20),
+            talentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            talentStack.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
+
+            nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
+    }
+
+    func createTalentRow(tag1: Int, tag2: Int, tag3: Int) -> UIStackView {
+        guard let spec = spec else { return UIStackView() }
+        let stackView = createStackView()
+        let button1 = createButton(image: spec.talentImages[tag1], bgColor: .gray)
+        let button2 = createButton(image: spec.talentImages[tag2], bgColor: .gray)
+        let button3 = createButton(image: spec.talentImages[tag3], bgColor: .gray)
+
+        button1.tag = tag1
+        button2.tag = tag2
+        button3.tag = tag3
+        
+        view.addSubview(stackView)
+        stackView.addArrangedSubview(button1)
+        stackView.addArrangedSubview(button2)
+        stackView.addArrangedSubview(button3)
+
+        button1.addTarget(self, action: #selector(clickTalent), for: .touchUpInside)
+        button2.addTarget(self, action: #selector(clickTalent), for: .touchUpInside)
+        button3.addTarget(self, action: #selector(clickTalent), for: .touchUpInside)
+
+        return stackView
+    }
+
+    @objc func clickTalent(_ sender: UIButton) {
+        switch sender.tag {
+        case <#pattern#>:
+            <#code#>
+        default:
+            <#code#>
+        }
     }
     
 
