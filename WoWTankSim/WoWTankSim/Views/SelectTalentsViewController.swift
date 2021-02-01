@@ -10,6 +10,14 @@ import UIKit
 class SelectTalentsViewController: UIViewController {
 
     var playerController: PlayerController?
+    var spec: SpecImages?
+    var fifteen = 1
+    var twentyFive = 1
+    var thirty = 1
+    var thirtyFive = 1
+    var forty = 1
+    var fortyFive = 1
+    var fifty = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
