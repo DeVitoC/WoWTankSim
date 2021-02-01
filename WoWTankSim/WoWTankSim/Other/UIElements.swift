@@ -33,7 +33,6 @@ func createHeader(xPos: Int, text1: String, text2: String? = nil) -> UIView {
     let label2 = UILabel()
     let stackView = UIStackView()
 
-//    headerView.translatesAutoresizingMaskIntoConstraints = false
     label1.translatesAutoresizingMaskIntoConstraints = false
     stackView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -78,4 +77,14 @@ func createSwitch(_ tag: Int) -> UISwitch {
     switch1.tag = tag
 
     return switch1
+}
+
+func createStackView(axis: NSLayoutConstraint.Axis = .horizontal, alignment: UIStackView.Alignment = .fill, distribution: UIStackView.Distribution = .fillEqually) -> UIStackView {
+    let stackView = UIStackView()
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    stackView.axis = axis
+    stackView.alignment = alignment
+    stackView.distribution = distribution
+
+    return stackView
 }
