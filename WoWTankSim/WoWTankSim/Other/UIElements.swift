@@ -13,10 +13,14 @@ let secondColor = UIColor.systemIndigo
 let groupSpace: CGFloat = 15
 let smallSpace: CGFloat = 5
 
-func createButton(text: String, bgColor: UIColor = mainColor) -> UIButton {
+func createButton(text: String = "", image: String = "", bgColor: UIColor = mainColor) -> UIButton {
     let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
     button.translatesAutoresizingMaskIntoConstraints = false
-    button.setTitle(text, for: .normal)
+    if text != "" {
+        button.setTitle(text, for: .normal)
+    } else {
+        button.setImage(UIImage(named: image), for: .normal)
+    }
     button.backgroundColor = bgColor
     button.tintColor = .white
 
