@@ -33,6 +33,7 @@
 		E2FE913725BF5ABF007D3B97 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913625BF5ABF007D3B97 /* Enums.swift */; };
 		E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE913B25BF62D8007D3B97 /* TalentTree.swift */; };
 		E2FE914225BF6E34007D3B97 /* Pelagos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE914125BF6E34007D3B97 /* Pelagos.swift */; };
+		E2FFE88B25C872B40035B882 /* TalentImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFE88A25C872B40035B882 /* TalentImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		E2FE913625BF5ABF007D3B97 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		E2FE913B25BF62D8007D3B97 /* TalentTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentTree.swift; sourceTree = "<group>"; };
 		E2FE914125BF6E34007D3B97 /* Pelagos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelagos.swift; sourceTree = "<group>"; };
+		E2FFE88A25C872B40035B882 /* TalentImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				E2FE913625BF5ABF007D3B97 /* Enums.swift */,
 				E279DFED25C0896B00D5CCFA /* UIElements.swift */,
+				E2FFE88A25C872B40035B882 /* TalentImages.swift */,
 				E2FE90B025BF485A007D3B97 /* WoWTankSim.entitlements */,
 				E2FE907D25BF4782007D3B97 /* AppDelegate.swift */,
 				E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */,
@@ -373,6 +376,7 @@
 				E2FE913225BF58E2007D3B97 /* Player.swift in Sources */,
 				E2FE90C125BF5029007D3B97 /* SelectGearSourceViewController.swift in Sources */,
 				E2FE90C625BF5041007D3B97 /* SelectTalentsViewController.swift in Sources */,
+				E2FFE88B25C872B40035B882 /* TalentImages.swift in Sources */,
 				E279E00525C0C9E500D5CCFA /* PlayerController.swift in Sources */,
 				E2FE90BC25BF4FF3007D3B97 /* SelectClassViewController.swift in Sources */,
 			);
