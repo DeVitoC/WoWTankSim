@@ -87,6 +87,9 @@ class SelectTalentsViewController: UIViewController {
         talentStack.distribution = .fillEqually
         talentStack.spacing = smallSpace
 
+        // nextButton settings
+        nextButton.addTarget(self, action: #selector(clickNext), for: .touchUpInside)
+
         // Add Constraints for UI elements
         NSLayoutConstraint.activate([
             header.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
@@ -173,16 +176,26 @@ class SelectTalentsViewController: UIViewController {
             NSLog("Not a valid button")
         }
     }
-    
 
-    /*
+    @objc func clickNext(_ sender: UIButton) {
+        let talentTree = TalentTree(fifteen: fifteen,
+                                    twentyFive: twentyFive,
+                                    thirty: thirty,
+                                    thirtyFive: thirtyFive,
+                                    forty: forty,
+                                    fortyFive: fortyFive,
+                                    fifty: fifty)
+        playerController?.player?.talents = talentTree
+        performSegue(withIdentifier: "SelectSoulbindSegue", sender: self)
+    }
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if segue.identifier == "SelectSoulbindSegue" {
+            guard let destinationVC = segue.destination as? SelectSoulbindViewController else { return }
 
+            destinationVC.playerController = playerController
+        }
+    }
 }
