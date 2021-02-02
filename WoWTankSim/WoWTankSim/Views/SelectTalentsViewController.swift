@@ -9,8 +9,18 @@ import UIKit
 
 class SelectTalentsViewController: UIViewController {
 
+    // MARK: - Properties
     var playerController: PlayerController?
     var spec: SpecImages?
+
+    var rowFifteenStack: UIStackView!
+    var rowTwentyFiveStack: UIStackView!
+    var rowThirtyStack: UIStackView!
+    var rowThirtyFiveStack: UIStackView!
+    var rowFortyStack: UIStackView!
+    var rowFortyFiveStack: UIStackView!
+    var rowFiftyStack: UIStackView!
+
     var fifteen = 1
     var twentyFive = 1
     var thirty = 1
@@ -19,6 +29,7 @@ class SelectTalentsViewController: UIViewController {
     var fortyFive = 1
     var fifty = 1
 
+    // MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
         setSpec()
@@ -48,18 +59,15 @@ class SelectTalentsViewController: UIViewController {
         let header = createHeader(xPos: Int(view.frame.width/2 - 125),
                                   text1: "Select Your Talents")
         let talentStack = createStackView(axis: .vertical)
-        let rowFifteenStack = createTalentRow(tag1: 0, tag2: 1, tag3: 2)
-        let rowTwentyFiveStack = createTalentRow(tag1: 3, tag2: 4, tag3: 5)
-        let rowThirtyStack = createTalentRow(tag1: 6, tag2: 7, tag3: 8)
-        let rowThirtyFiveStack = createTalentRow(tag1: 9, tag2: 10, tag3: 11)
-        let rowFortyStack = createTalentRow(tag1: 12, tag2: 13, tag3: 14)
-        let rowFortyFiveStack = createTalentRow(tag1: 15, tag2: 16, tag3: 17)
-        let rowFiftyStack = createTalentRow(tag1: 18, tag2: 19, tag3: 20)
-
+        rowFifteenStack = createTalentRow(tag1: 0, tag2: 1, tag3: 2)
+        rowTwentyFiveStack = createTalentRow(tag1: 3, tag2: 4, tag3: 5)
+        rowThirtyStack = createTalentRow(tag1: 6, tag2: 7, tag3: 8)
+        rowThirtyFiveStack = createTalentRow(tag1: 9, tag2: 10, tag3: 11)
+        rowFortyStack = createTalentRow(tag1: 12, tag2: 13, tag3: 14)
+        rowFortyFiveStack = createTalentRow(tag1: 15, tag2: 16, tag3: 17)
+        rowFiftyStack = createTalentRow(tag1: 18, tag2: 19, tag3: 20)
 
         let nextButton = createButton(text: "NEXT")
-
-        // Set translates mask to false
 
         // Add Elements to UI
         view.addSubview(header)
@@ -93,6 +101,7 @@ class SelectTalentsViewController: UIViewController {
         ])
     }
 
+    // MARK: - Actions
     func createTalentRow(tag1: Int, tag2: Int, tag3: Int) -> UIStackView {
         guard let spec = spec else { return UIStackView() }
         let stackView = createStackView()
