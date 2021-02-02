@@ -28,4 +28,15 @@ class PlayerController {
         }
         player.source.removeAll(where: {$0 == source})
     }
+
+    func setTalents(talents: [Int]) {
+        guard let player = player else { return }
+        player.talents.fifteen = talents[0]
+        player.talents.twentyFive = talents[1]
+        player.talents.thirty = talents[2]
+        player.talents.thirtyFive = talents[3]
+        player.talents.forty = talents[4]
+        player.talents.fortyFive = talents[5]
+        player.talents.fifty = talents[6]
+    }
 }

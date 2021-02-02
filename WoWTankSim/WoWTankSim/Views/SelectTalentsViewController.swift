@@ -11,7 +11,7 @@ class SelectTalentsViewController: UIViewController {
 
     // MARK: - Properties
     var playerController: PlayerController?
-    var spec: SpecImages?
+    var spec: SpecInfo?
 
     var rowFifteenStack: UIStackView!
     var rowTwentyFiveStack: UIStackView!
@@ -67,12 +67,15 @@ class SelectTalentsViewController: UIViewController {
         rowFortyFiveStack = createTalentRow(tag1: 15, tag2: 16, tag3: 17)
         rowFiftyStack = createTalentRow(tag1: 18, tag2: 19, tag3: 20)
 
-        let nextButton = createButton(text: "NEXT")
+        let nextButton = createButton(text: "My Talents")
+        let defautlRaidTalentsButton = createButton(text: "Raid Talents")
+        let defaultMPlusTalentsButton = createButton(text: "M+ Talents")
+        let buttonStack = createStackView()
 
         // Add Elements to UI
         view.addSubview(header)
         view.addSubview(talentStack)
-        view.addSubview(nextButton)
+        view.addSubview(buttonStack)
         talentStack.addArrangedSubview(rowFifteenStack)
         talentStack.addArrangedSubview(rowTwentyFiveStack)
         talentStack.addArrangedSubview(rowThirtyStack)
@@ -80,12 +83,23 @@ class SelectTalentsViewController: UIViewController {
         talentStack.addArrangedSubview(rowFortyStack)
         talentStack.addArrangedSubview(rowFortyFiveStack)
         talentStack.addArrangedSubview(rowFiftyStack)
+        buttonStack.addArrangedSubview(defautlRaidTalentsButton)
+        buttonStack.addArrangedSubview(defaultMPlusTalentsButton)
+        buttonStack.addArrangedSubview(nextButton)
 
-        // talentStack settings
+        // StackView settings
         talentStack.axis = .vertical
         talentStack.alignment = .fill
         talentStack.distribution = .fillEqually
         talentStack.spacing = smallSpace
+        buttonStack.spacing = smallSpace
+
+        // Segue Buttons settings
+        nextButton.addTarget(self, action: #selector(clickNext), for: .touchUpInside)
+        defautlRaidTalentsButton.tag = 101
+        defaultMPlusTalentsButton.tag = 102
+        defautlRaidTalentsButton.addTarget(self, action: #selector(clickDefualtTalents), for: .touchUpInside)
+        defaultMPlusTalentsButton.addTarget(self, action: #selector(clickDefualtTalents), for: .touchUpInside)
 
         // Add Constraints for UI elements
         NSLayoutConstraint.activate([
@@ -94,10 +108,10 @@ class SelectTalentsViewController: UIViewController {
 
             talentStack.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 20),
             talentStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            talentStack.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
+            talentStack.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
 
-            nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
-            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonStack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            buttonStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
     }
 
@@ -140,31 +154,31 @@ class SelectTalentsViewController: UIViewController {
             rowTwentyFiveStack.arrangedSubviews[2].backgroundColor = .gray
             sender.backgroundColor = mainColor
         case 6...8:
-            twentyFive = sender.tag - 5
+            thirty = sender.tag - 5
             rowThirtyStack.arrangedSubviews[0].backgroundColor = .gray
             rowThirtyStack.arrangedSubviews[1].backgroundColor = .gray
             rowThirtyStack.arrangedSubviews[2].backgroundColor = .gray
             sender.backgroundColor = mainColor
         case 9...11:
-            twentyFive = sender.tag - 8
+            thirtyFive = sender.tag - 8
             rowThirtyFiveStack.arrangedSubviews[0].backgroundColor = .gray
             rowThirtyFiveStack.arrangedSubviews[1].backgroundColor = .gray
             rowThirtyFiveStack.arrangedSubviews[2].backgroundColor = .gray
             sender.backgroundColor = mainColor
         case 12...14:
-            twentyFive = sender.tag - 11
+            forty = sender.tag - 11
             rowFortyStack.arrangedSubviews[0].backgroundColor = .gray
             rowFortyStack.arrangedSubviews[1].backgroundColor = .gray
             rowFortyStack.arrangedSubviews[2].backgroundColor = .gray
             sender.backgroundColor = mainColor
         case 15...17:
-            twentyFive = sender.tag - 14
+            fortyFive = sender.tag - 14
             rowFortyFiveStack.arrangedSubviews[0].backgroundColor = .gray
             rowFortyFiveStack.arrangedSubviews[1].backgroundColor = .gray
             rowFortyFiveStack.arrangedSubviews[2].backgroundColor = .gray
             sender.backgroundColor = mainColor
         case 18...20:
-            twentyFive = sender.tag - 17
+            fifty = sender.tag - 17
             rowFiftyStack.arrangedSubviews[0].backgroundColor = .gray
             rowFiftyStack.arrangedSubviews[1].backgroundColor = .gray
             rowFiftyStack.arrangedSubviews[2].backgroundColor = .gray
@@ -173,16 +187,41 @@ class SelectTalentsViewController: UIViewController {
             NSLog("Not a valid button")
         }
     }
-    
 
-    /*
+    @objc func clickNext(_ sender: UIButton) {
+        playerController?.setTalents(talents: [fifteen, twentyFive, thirty, thirtyFive, forty, fortyFive, fifty])
+        performSegue(withIdentifier: "SelectSoulbindSegue", sender: self)
+    }
+
+    @objc func clickDefualtTalents(_ sender: UIButton) {
+        guard let spec = spec else { return }
+        if sender.tag == 101 {
+            playerController?.setTalents(talents: [spec.raidTalents.fifteen,
+                                                   spec.raidTalents.twentyFive,
+                                                   spec.raidTalents.thirty,
+                                                   spec.raidTalents.thirtyFive,
+                                                   spec.raidTalents.forty,
+                                                   spec.raidTalents.fortyFive,
+                                                   spec.raidTalents.fifty])
+        } else {
+            playerController?.setTalents(talents: [spec.mPlusTalents.fifteen,
+                                                   spec.mPlusTalents.twentyFive,
+                                                   spec.mPlusTalents.thirty,
+                                                   spec.mPlusTalents.thirtyFive,
+                                                   spec.mPlusTalents.forty,
+                                                   spec.mPlusTalents.fortyFive,
+                                                   spec.mPlusTalents.fifty])
+        }
+        performSegue(withIdentifier: "SelectSoulbindSegue", sender: self)
+    }
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if segue.identifier == "SelectSoulbindSegue" {
+            guard let destinationVC = segue.destination as? SelectSoulbindViewController else { return }
 
+            destinationVC.playerController = playerController
+        }
+    }
 }
