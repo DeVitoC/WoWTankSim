@@ -13,6 +13,7 @@ struct TalentTree {
 
     init(fifteen: Int, twentyFive: Int, thirty: Int, thirtyFive: Int,
          forty: Int, fortyFive: Int, fifty: Int) {
+
         // Set properties as long as no erroneous value was inputted - should be 1, 2, or 3
         self.fifteen = (fifteen >= 1 && fifteen <= 3) ? fifteen : 1
         self.twentyFive = (twentyFive >= 1 && twentyFive <= 3) ? twentyFive : 1
