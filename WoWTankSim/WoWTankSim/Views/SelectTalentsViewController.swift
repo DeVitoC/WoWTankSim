@@ -127,10 +127,50 @@ class SelectTalentsViewController: UIViewController {
 
     @objc func clickTalent(_ sender: UIButton) {
         switch sender.tag {
-        case <#pattern#>:
-            <#code#>
+        case 0...2:
+            fifteen = sender.tag + 1
+            rowFifteenStack.arrangedSubviews[0].backgroundColor = .gray
+            rowFifteenStack.arrangedSubviews[1].backgroundColor = .gray
+            rowFifteenStack.arrangedSubviews[2].backgroundColor = .gray
+            sender.backgroundColor = mainColor
+        case 3...5:
+            twentyFive = sender.tag - 2
+            rowTwentyFiveStack.arrangedSubviews[0].backgroundColor = .gray
+            rowTwentyFiveStack.arrangedSubviews[1].backgroundColor = .gray
+            rowTwentyFiveStack.arrangedSubviews[2].backgroundColor = .gray
+            sender.backgroundColor = mainColor
+        case 6...8:
+            twentyFive = sender.tag - 5
+            rowThirtyStack.arrangedSubviews[0].backgroundColor = .gray
+            rowThirtyStack.arrangedSubviews[1].backgroundColor = .gray
+            rowThirtyStack.arrangedSubviews[2].backgroundColor = .gray
+            sender.backgroundColor = mainColor
+        case 9...11:
+            twentyFive = sender.tag - 8
+            rowThirtyFiveStack.arrangedSubviews[0].backgroundColor = .gray
+            rowThirtyFiveStack.arrangedSubviews[1].backgroundColor = .gray
+            rowThirtyFiveStack.arrangedSubviews[2].backgroundColor = .gray
+            sender.backgroundColor = mainColor
+        case 12...14:
+            twentyFive = sender.tag - 11
+            rowFortyStack.arrangedSubviews[0].backgroundColor = .gray
+            rowFortyStack.arrangedSubviews[1].backgroundColor = .gray
+            rowFortyStack.arrangedSubviews[2].backgroundColor = .gray
+            sender.backgroundColor = mainColor
+        case 15...17:
+            twentyFive = sender.tag - 14
+            rowFortyFiveStack.arrangedSubviews[0].backgroundColor = .gray
+            rowFortyFiveStack.arrangedSubviews[1].backgroundColor = .gray
+            rowFortyFiveStack.arrangedSubviews[2].backgroundColor = .gray
+            sender.backgroundColor = mainColor
+        case 18...20:
+            twentyFive = sender.tag - 17
+            rowFiftyStack.arrangedSubviews[0].backgroundColor = .gray
+            rowFiftyStack.arrangedSubviews[1].backgroundColor = .gray
+            rowFiftyStack.arrangedSubviews[2].backgroundColor = .gray
+            sender.backgroundColor = mainColor
         default:
-            <#code#>
+            NSLog("Not a valid button")
         }
     }
     
