@@ -13,6 +13,7 @@
 		E2B217FB25CB605A00C3714A /* Mikanikos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B217FA25CB605A00C3714A /* Mikanikos.swift */; };
 		E2B2180025CB615D00C3714A /* Niya.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B217FF25CB615D00C3714A /* Niya.swift */; };
 		E2B2180525CB62CB00C3714A /* Dreamweaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2180425CB62CB00C3714A /* Dreamweaver.swift */; };
+		E2B2180A25CB646600C3714A /* Korayn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2180925CB646600C3714A /* Korayn.swift */; };
 		E2DD415B25C3516300C600EF /* UISwitch+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD415A25C3516300C600EF /* UISwitch+size.swift */; };
 		E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907D25BF4782007D3B97 /* AppDelegate.swift */; };
 		E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */; };
@@ -64,6 +65,7 @@
 		E2B217FA25CB605A00C3714A /* Mikanikos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mikanikos.swift; sourceTree = "<group>"; };
 		E2B217FF25CB615D00C3714A /* Niya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Niya.swift; sourceTree = "<group>"; };
 		E2B2180425CB62CB00C3714A /* Dreamweaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dreamweaver.swift; sourceTree = "<group>"; };
+		E2B2180925CB646600C3714A /* Korayn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Korayn.swift; sourceTree = "<group>"; };
 		E2DD415A25C3516300C600EF /* UISwitch+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+size.swift"; sourceTree = "<group>"; };
 		E2FE907A25BF4782007D3B97 /* WoWTankSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTankSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FE907D25BF4782007D3B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				E2B217FA25CB605A00C3714A /* Mikanikos.swift */,
 				E2B217FF25CB615D00C3714A /* Niya.swift */,
 				E2B2180425CB62CB00C3714A /* Dreamweaver.swift */,
+				E2B2180925CB646600C3714A /* Korayn.swift */,
 			);
 			path = Soulbinds;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */,
 				E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */,
 				E2B217F625CB48B800C3714A /* Kleia.swift in Sources */,
+				E2B2180A25CB646600C3714A /* Korayn.swift in Sources */,
 				E2B2180025CB615D00C3714A /* Niya.swift in Sources */,
 				E2FE90D525BF508A007D3B97 /* SelectStyleViewController.swift in Sources */,
 				E2FE90E425BF50EC007D3B97 /* UsedSoulbindViewController.swift in Sources */,
