@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Pelagos {
-    let row1 = ["Combat Meditation"]
+struct Pelagos: SoulbindProtocol {
+    var row1 = ["Combat Meditation"]
     var row2 = ["Potency", "Endurance", "Finess"]
     var row3 = ["Focusing Mantra", "Road of Trials", "Phial of Patience"]
     var row4 = ["Endurance"]

@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Dreamweaver {
-    let row1 = ["Podtender"]
+struct Dreamweaver: SoulbindProtocol {
+    var row1 = ["Podtender"]
     var row2 = ["Endurance", "Finess"]
     var row3 = ["Potency"]
     var row4 = ["Soothing Voice", "Social Butterfly", "Empowered Chrysalis"]

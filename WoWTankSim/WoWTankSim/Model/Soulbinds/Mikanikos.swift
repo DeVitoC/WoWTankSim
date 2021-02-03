@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Kleia {
-    let row1 = ["Bron's Call to Action"]
+struct Mikanikos: SoulbindProtocol {
+    var row1 = ["Bron's Call to Action"]
     var row2 = ["Potency", "Endurance"]
     var row3 = ["Forgelite Filter", "Charged Additive"]
     var row4 = ["Finess"]

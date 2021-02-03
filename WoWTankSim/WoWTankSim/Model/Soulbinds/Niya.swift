@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Niya {
-    let row1 = ["Grove Invigoration"]
+struct Niya: SoulbindProtocol {
+    var row1 = ["Grove Invigoration"]
     var row2 = ["Potency", "Endurance"]
     var row3 = ["Run Without Tiring", "Stay on the Move"]
     var row4 = ["Finess"]

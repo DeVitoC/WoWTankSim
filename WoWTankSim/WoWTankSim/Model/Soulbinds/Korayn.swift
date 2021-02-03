@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Korayn {
-    let row1 = ["Wild Hunt Tactics"]
+struct Korayn: SoulbindProtocol {
+    var row1 = ["Wild Hunt Tactics"]
     var row2 = ["Potency", "Endurance"]
     var row3 = ["Horn of the Wild Hunt", "Wild Hunt's Charge"]
     var row4 = ["Finess"]

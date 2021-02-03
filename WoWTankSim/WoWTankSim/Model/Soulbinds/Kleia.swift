@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Kleia {
-    let row1 = ["Valiant Strikes"]
+struct Kleia: SoulbindProtocol {
+    var row1 = ["Valiant Strikes"]
     var row2 = ["Potency", "Endurance"]
     var row3 = ["Mentorship", "Ascendant Phial"]
     var row4 = ["Finess"]
