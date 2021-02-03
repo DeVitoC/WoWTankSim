@@ -10,6 +10,7 @@
 		E279DFEE25C0896B00D5CCFA /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279DFED25C0896B00D5CCFA /* UIElements.swift */; };
 		E279E00525C0C9E500D5CCFA /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E279E00425C0C9E500D5CCFA /* PlayerController.swift */; };
 		E2B217F625CB48B800C3714A /* Kleia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B217F525CB48B800C3714A /* Kleia.swift */; };
+		E2B217FB25CB605A00C3714A /* Mikanikos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B217FA25CB605A00C3714A /* Mikanikos.swift */; };
 		E2DD415B25C3516300C600EF /* UISwitch+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD415A25C3516300C600EF /* UISwitch+size.swift */; };
 		E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907D25BF4782007D3B97 /* AppDelegate.swift */; };
 		E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */; };
@@ -58,6 +59,7 @@
 		E279DFED25C0896B00D5CCFA /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
 		E279E00425C0C9E500D5CCFA /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 		E2B217F525CB48B800C3714A /* Kleia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kleia.swift; sourceTree = "<group>"; };
+		E2B217FA25CB605A00C3714A /* Mikanikos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mikanikos.swift; sourceTree = "<group>"; };
 		E2DD415A25C3516300C600EF /* UISwitch+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+size.swift"; sourceTree = "<group>"; };
 		E2FE907A25BF4782007D3B97 /* WoWTankSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTankSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FE907D25BF4782007D3B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			children = (
 				E2FE914125BF6E34007D3B97 /* Pelagos.swift */,
 				E2B217F525CB48B800C3714A /* Kleia.swift */,
+				E2B217FA25CB605A00C3714A /* Mikanikos.swift */,
 			);
 			path = Soulbinds;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */,
 				E2FE90CB25BF505B007D3B97 /* SelectSoulbindViewController.swift in Sources */,
 				E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */,
+				E2B217FB25CB605A00C3714A /* Mikanikos.swift in Sources */,
 				E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */,
 				E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */,
 				E2B217F625CB48B800C3714A /* Kleia.swift in Sources */,
