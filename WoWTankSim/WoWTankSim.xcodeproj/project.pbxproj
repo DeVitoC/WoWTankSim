@@ -18,6 +18,9 @@
 		E2B8EFAE25CBC497006BDACF /* Marileth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFAD25CBC496006BDACF /* Marileth.swift */; };
 		E2B8EFB325CBC5DF006BDACF /* Emeni.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFB225CBC5DF006BDACF /* Emeni.swift */; };
 		E2B8EFB825CBC732006BDACF /* Heirmir.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFB725CBC732006BDACF /* Heirmir.swift */; };
+		E2B8EFBD25CBC8A1006BDACF /* Nadjia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFBC25CBC8A1006BDACF /* Nadjia.swift */; };
+		E2B8EFC225CBC8BE006BDACF /* Theotar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFC125CBC8BE006BDACF /* Theotar.swift */; };
+		E2B8EFC725CBC8D1006BDACF /* Draven.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFC625CBC8D1006BDACF /* Draven.swift */; };
 		E2DD415B25C3516300C600EF /* UISwitch+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD415A25C3516300C600EF /* UISwitch+size.swift */; };
 		E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907D25BF4782007D3B97 /* AppDelegate.swift */; };
 		E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */; };
@@ -74,6 +77,9 @@
 		E2B8EFAD25CBC496006BDACF /* Marileth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marileth.swift; sourceTree = "<group>"; };
 		E2B8EFB225CBC5DF006BDACF /* Emeni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emeni.swift; sourceTree = "<group>"; };
 		E2B8EFB725CBC732006BDACF /* Heirmir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heirmir.swift; sourceTree = "<group>"; };
+		E2B8EFBC25CBC8A1006BDACF /* Nadjia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nadjia.swift; sourceTree = "<group>"; };
+		E2B8EFC125CBC8BE006BDACF /* Theotar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theotar.swift; sourceTree = "<group>"; };
+		E2B8EFC625CBC8D1006BDACF /* Draven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draven.swift; sourceTree = "<group>"; };
 		E2DD415A25C3516300C600EF /* UISwitch+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+size.swift"; sourceTree = "<group>"; };
 		E2FE907A25BF4782007D3B97 /* WoWTankSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTankSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FE907D25BF4782007D3B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +256,9 @@
 				E2B8EFAD25CBC496006BDACF /* Marileth.swift */,
 				E2B8EFB225CBC5DF006BDACF /* Emeni.swift */,
 				E2B8EFB725CBC732006BDACF /* Heirmir.swift */,
+				E2B8EFBC25CBC8A1006BDACF /* Nadjia.swift */,
+				E2B8EFC125CBC8BE006BDACF /* Theotar.swift */,
+				E2B8EFC625CBC8D1006BDACF /* Draven.swift */,
 			);
 			path = Soulbinds;
 			sourceTree = "<group>";
@@ -389,6 +398,7 @@
 				E2FE90D025BF506C007D3B97 /* SelectLegendaryViewController.swift in Sources */,
 				E2FE908225BF4782007D3B97 /* ViewController.swift in Sources */,
 				E279DFEE25C0896B00D5CCFA /* UIElements.swift in Sources */,
+				E2B8EFC225CBC8BE006BDACF /* Theotar.swift in Sources */,
 				E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */,
 				E2B8EFB825CBC732006BDACF /* Heirmir.swift in Sources */,
 				E2FE90CB25BF505B007D3B97 /* SelectSoulbindViewController.swift in Sources */,
@@ -398,7 +408,9 @@
 				E2FE90E925BF50FA007D3B97 /* UsedLegendaryViewController.swift in Sources */,
 				E2FE913C25BF62D8007D3B97 /* TalentTree.swift in Sources */,
 				E2B8EFB325CBC5DF006BDACF /* Emeni.swift in Sources */,
+				E2B8EFBD25CBC8A1006BDACF /* Nadjia.swift in Sources */,
 				E2B217F625CB48B800C3714A /* Kleia.swift in Sources */,
+				E2B8EFC725CBC8D1006BDACF /* Draven.swift in Sources */,
 				E2B2180A25CB646600C3714A /* Korayn.swift in Sources */,
 				E2B2180025CB615D00C3714A /* Niya.swift in Sources */,
 				E2FE90D525BF508A007D3B97 /* SelectStyleViewController.swift in Sources */,
