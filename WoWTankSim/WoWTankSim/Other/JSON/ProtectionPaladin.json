@@ -29,14 +29,35 @@
             "image": "road_of_trials"
         },
         "phial_of_patience": {
+            "description": "Phial of Serenity heals you for 35% additional health, but all of it's healing is done over 10 sec.",
             "proc": "phial_of_serenity",
             "percent_increase": 35,
+            "stat": "health",
             "modify": "heal_over_time",
             "duration": 10,
-            "average_effect": 
+            "cd": 300
+            "average_effect": 0.117,
+            "image": "phial_of_patience"
         },
         "bond_of_friendship": {
-            "average_effect": 0
-        }
+            "description": "Defeating an enemy reduces the cooldown on your steward's non-Phial services by 30 sec.",
+            "average_effect": 0,
+            "image": "bond_of_friendship"
+        },
+        "cleansed_vestments": {
+            "description": "You have a chance to obtain cleansed cloth and enchanting materials when you kill an enemy that yields experience of honor.",
+            "average_effect": 0,
+            "image": "cleansed_vestments"
+        },
+        "let_go_of_the_past": {
+            "description": "Using a spell or ability reduces your magic damage taken by 1% for 6 sec. Using another spell or ability increases this amount by 1% when it is not a repeat of the previous spell or ability, stacking to 3%.",
+            "stat": "magic_damage_taken",
+            "percent_increase": -3,
+            "duration": 6,
+            "cd": 0
+            "average_effect": -3,
+            "image": "let_go_of_the_past"
+        },
+        
     }
 }
