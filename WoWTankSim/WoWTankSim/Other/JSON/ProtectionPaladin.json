@@ -1,0 +1,42 @@
+
+{
+    "soulbind_abilities": {
+        "combat_meditation": {
+            "description": "Divine Toll increases your Mastery by 350 for 10 sec and occassionally expels Sorrowful Memories. /n/nWalking through Sorrowful Memories extends this effect by 3 sec. [Combat Meditation may only occur once every 1 min.]",
+            "proc": "divine_toll",
+            "stat": "mastery",
+            "quantity": 350
+            "duration": 10,
+            "cooldown": 60,
+            "average_effect": 58,
+            "image": "combat_meditation"
+        },
+        "focusing_mantra": {
+            "description": "Defeating an enemy lowers the cooldown on your Phial of Serenity by 1 sec.",
+            "event": "death_of_enemy",
+            "cd_reduction": "phial_of_serenity",
+            "quantity": 1,
+            "average_effect": 20,
+            "image": "focusing_mantra"
+        },
+        "road_of_trials": {
+            "description": "Defeating an enemy grants you 10% moevement speed for 20 sec. This effect is increased if defeating a powerful enemy.",
+            "event": "death_of_enemy",
+            "stat": "movement_speed",
+            "quantity_percent": 10,
+            "duration": 20,
+            "average_affect": 0,
+            "image": "road_of_trials"
+        },
+        "phial_of_patience": {
+            "proc": "phial_of_serenity",
+            "percent_increase": 35,
+            "modify": "heal_over_time",
+            "duration": 10,
+            "average_effect": 
+        },
+        "bond_of_friendship": {
+            "average_effect": 0
+        }
+    }
+}

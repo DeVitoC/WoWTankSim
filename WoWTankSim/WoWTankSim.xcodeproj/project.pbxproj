@@ -21,6 +21,7 @@
 		E2B8EFBD25CBC8A1006BDACF /* Nadjia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFBC25CBC8A1006BDACF /* Nadjia.swift */; };
 		E2B8EFC225CBC8BE006BDACF /* Theotar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFC125CBC8BE006BDACF /* Theotar.swift */; };
 		E2B8EFC725CBC8D1006BDACF /* Draven.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8EFC625CBC8D1006BDACF /* Draven.swift */; };
+		E2B8EFCD25CC515A006BDACF /* ProtectionPaladin.json in Resources */ = {isa = PBXBuildFile; fileRef = E2B8EFCC25CC515A006BDACF /* ProtectionPaladin.json */; };
 		E2DD415B25C3516300C600EF /* UISwitch+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD415A25C3516300C600EF /* UISwitch+size.swift */; };
 		E2FE907E25BF4782007D3B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907D25BF4782007D3B97 /* AppDelegate.swift */; };
 		E2FE908025BF4782007D3B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE907F25BF4782007D3B97 /* SceneDelegate.swift */; };
@@ -80,6 +81,7 @@
 		E2B8EFBC25CBC8A1006BDACF /* Nadjia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nadjia.swift; sourceTree = "<group>"; };
 		E2B8EFC125CBC8BE006BDACF /* Theotar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theotar.swift; sourceTree = "<group>"; };
 		E2B8EFC625CBC8D1006BDACF /* Draven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draven.swift; sourceTree = "<group>"; };
+		E2B8EFCC25CC515A006BDACF /* ProtectionPaladin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProtectionPaladin.json; sourceTree = "<group>"; };
 		E2DD415A25C3516300C600EF /* UISwitch+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+size.swift"; sourceTree = "<group>"; };
 		E2FE907A25BF4782007D3B97 /* WoWTankSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoWTankSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FE907D25BF4782007D3B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2B8EFCB25CC50FC006BDACF /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8EFCC25CC515A006BDACF /* ProtectionPaladin.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		E2FE907125BF4782007D3B97 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		E2FE90B725BF48E4007D3B97 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E2B8EFCB25CC50FC006BDACF /* JSON */,
 				E2FE913625BF5ABF007D3B97 /* Enums.swift */,
 				E279DFED25C0896B00D5CCFA /* UIElements.swift */,
 				E2FFE88A25C872B40035B882 /* TalentImages.swift */,
@@ -368,6 +379,7 @@
 			files = (
 				E2FE908A25BF4783007D3B97 /* LaunchScreen.storyboard in Resources */,
 				E2FE908725BF4783007D3B97 /* Assets.xcassets in Resources */,
+				E2B8EFCD25CC515A006BDACF /* ProtectionPaladin.json in Resources */,
 				E2FE908525BF4782007D3B97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
