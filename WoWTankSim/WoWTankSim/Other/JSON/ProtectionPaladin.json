@@ -32,10 +32,10 @@
             "description": "Phial of Serenity heals you for 35% additional health, but all of it's healing is done over 10 sec.",
             "proc": "phial_of_serenity",
             "percent_increase": 35,
-            "stat": "health",
+            "ability": "phial_of_serenity",
             "modify": "heal_over_time",
             "duration": 10,
-            "cd": 300
+            "cooldown": 300
             "average_effect": 0.117,
             "image": "phial_of_patience"
         },
@@ -52,12 +52,43 @@
         "let_go_of_the_past": {
             "description": "Using a spell or ability reduces your magic damage taken by 1% for 6 sec. Using another spell or ability increases this amount by 1% when it is not a repeat of the previous spell or ability, stacking to 3%.",
             "stat": "magic_damage_taken",
-            "percent_increase": -3,
+            "percent_increase": -1,
+            "max_stack": 3,
             "duration": 6,
-            "cd": 0
+            "cooldown": 0
             "average_effect": -3,
             "image": "let_go_of_the_past"
         },
-        
+        "valiant_strikes": {
+            "description": "Your critical strikes grant you stacks of Valiant Strikes, up to 20. If a nearby party member drops below 50% health, you consume these stacks to heal them for 1% of their maximum health per stack. /n/nAfter healing this way, you may not benefit from Valiant Strikes for 1 min.",
+            "proc": "crit",
+            "stat": "health",
+            "percent_heal": 1,
+            "max_stack": 20,
+            "cooldown": 60,
+            "average_effect": 10,
+            "image": "valiant_strikes"
+        },
+        "mentorship": {
+            "description": "While above 90% health, you increase nearby party members' maximum health by 5%.",
+            "average_effect": 2.5,
+            "stat": "party_health",
+            "image": "mentorship"
+        },
+        "ascendant_phial": {
+            "description": "Phial of Serenity renders you immune to Curse, Disease, Poison, and Bleed effects for 8 sec.",
+            "proc": "phial_of_serenity",
+            "effect": "immune",
+            "types": [
+                "curse",
+                "disease",
+                "poison",
+                "bleed"
+            ],
+            "duration": 8,
+            "cooldown": 300,
+            "average_effect": 0,
+            "image": "ascendant_phial"
+        }, 
     }
 }
