@@ -3,6 +3,7 @@
     "soulbind_abilities": {
         "combat_meditation": {
             "description": "Divine Toll increases your Mastery by 350 for 10 sec and occassionally expels Sorrowful Memories. /n/nWalking through Sorrowful Memories extends this effect by 3 sec. [Combat Meditation may only occur once every 1 min.]",
+            "name": "Combat Meditation",
             "proc": "divine_toll",
             "stat": "mastery",
             "quantity": 350
@@ -13,6 +14,7 @@
         },
         "focusing_mantra": {
             "description": "Defeating an enemy lowers the cooldown on your Phial of Serenity by 1 sec.",
+            "name": "Focusing Mantra",
             "event": "death_of_enemy",
             "cd_reduction": "phial_of_serenity",
             "quantity": 1,
@@ -21,6 +23,7 @@
         },
         "road_of_trials": {
             "description": "Defeating an enemy grants you 10% moevement speed for 20 sec. This effect is increased if defeating a powerful enemy.",
+            "name": "Road of Trials",
             "event": "death_of_enemy",
             "stat": "movement_speed",
             "quantity_percent": 10,
@@ -31,6 +34,7 @@
         "phial_of_patience": {
             "description": "Phial of Serenity heals you for 35% additional health, but all of it's healing is done over 10 sec.",
             "proc": "phial_of_serenity",
+            "name": "Phial of Patience",
             "percent_increase": 35,
             "ability": "phial_of_serenity",
             "modify": "heal_over_time",
@@ -41,16 +45,19 @@
         },
         "bond_of_friendship": {
             "description": "Defeating an enemy reduces the cooldown on your steward's non-Phial services by 30 sec.",
+            "name": "Bond of Friendship",
             "average_effect": 0,
             "image": "bond_of_friendship"
         },
         "cleansed_vestments": {
             "description": "You have a chance to obtain cleansed cloth and enchanting materials when you kill an enemy that yields experience of honor.",
+            "name": "Cleansed Vestments",
             "average_effect": 0,
             "image": "cleansed_vestments"
         },
         "let_go_of_the_past": {
             "description": "Using a spell or ability reduces your magic damage taken by 1% for 6 sec. Using another spell or ability increases this amount by 1% when it is not a repeat of the previous spell or ability, stacking to 3%.",
+            "name": "Let Go of the Past",
             "stat": "magic_damage_taken",
             "percent_increase": -1,
             "max_stack": 3,
@@ -61,6 +68,7 @@
         },
         "valiant_strikes": {
             "description": "Your critical strikes grant you stacks of Valiant Strikes, up to 20. If a nearby party member drops below 50% health, you consume these stacks to heal them for 1% of their maximum health per stack. /n/nAfter healing this way, you may not benefit from Valiant Strikes for 1 min.",
+            "name": "Valiant Strikes",
             "proc": "crit",
             "stat": "health",
             "percent_heal": 1,
@@ -71,12 +79,14 @@
         },
         "mentorship": {
             "description": "While above 90% health, you increase nearby party members' maximum health by 5%.",
+            "name": "Mentorship",
             "average_effect": 2.5,
             "stat": "party_health",
             "image": "mentorship"
         },
         "ascendant_phial": {
             "description": "Phial of Serenity renders you immune to Curse, Disease, Poison, and Bleed effects for 8 sec.",
+            "name": "Ascendant Phial",
             "proc": "phial_of_serenity",
             "effect": "immune",
             "types": [
@@ -92,6 +102,7 @@
         },
         "cleansing_rites": {
             "description": "After 5 sec out of combat, gain a shield for 10% of your maximum health.",
+            "name": "Cleansing Rites",
             "proc": "out_of_combat",
             "stat": "shield",
             "percent": 10,
@@ -100,12 +111,14 @@
         },
         "ever_forward": {
             "description": "While above 90% health, your mounted movement speed is increased by 10%.",
+            "name": "Ever Forward",
             "average_effect": 5,
             "stat": "mounted_speed",
             "image": "ever_forward"
         },
         "bearers_pursuit": {
             "description": "Your damaging spells and abilities have a chance to decrease your target's movement speed by 45% for 20 sec.",
+            "name": "Bearer's Pursuit",
             "proc_per_minute": 1.5,
             "proc": "damage_ability",
             "effect": "target_movement_speed",
@@ -116,6 +129,7 @@
         },
         "pointed_courage": {
             "description": "Chance to critical strike is increased by 1% for every nearby enemy or ally, up to 5%.",
+            "name": "Pointed Courage",
             "effect": "crit_chance",
             "percent": 1,
             "max_stack": 5,
@@ -124,6 +138,7 @@
         },
         "resonant_accolades": {
             "description": "When receiving healing while above 70% health or healing an ally that's above 70% health, 4% of the healing done is repeated on the target over 5 sec.",
+            "name": "Resonant Accolades",
             "effect": "additional_healing",
             "percent": 4,
             "average_effect": 2,
