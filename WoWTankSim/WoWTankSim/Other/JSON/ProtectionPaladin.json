@@ -114,6 +114,20 @@
             "average_effect": -22.5,
             "image": "bearers_pursuit"
         },
-        
+        "pointed_courage": {
+            "description": "Chance to critical strike is increased by 1% for every nearby enemy or ally, up to 5%.",
+            "effect": "crit_chance",
+            "percent": 1,
+            "max_stack": 5,
+            "average_effect": 5,
+            "image": "pointed_courage"
+        },
+        "resonant_accolades": {
+            "description": "When receiving healing while above 70% health or healing an ally that's above 70% health, 4% of the healing done is repeated on the target over 5 sec.",
+            "effect": "additional_healing",
+            "percent": 4,
+            "average_effect": 2,
+            "image": "resonant_accolades"
+        }
     }
 }
