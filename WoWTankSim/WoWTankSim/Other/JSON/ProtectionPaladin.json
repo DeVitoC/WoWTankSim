@@ -89,6 +89,31 @@
             "cooldown": 300,
             "average_effect": 0,
             "image": "ascendant_phial"
-        }, 
+        },
+        "cleansing_rites": {
+            "description": "After 5 sec out of combat, gain a shield for 10% of your maximum health.",
+            "proc": "out_of_combat",
+            "stat": "shield",
+            "percent": 10,
+            "average_effect": 0,
+            "image": "cleansing_rites"
+        },
+        "ever_forward": {
+            "description": "While above 90% health, your mounted movement speed is increased by 10%.",
+            "average_effect": 5,
+            "stat": "mounted_speed",
+            "image": "ever_forward"
+        },
+        "bearers_pursuit": {
+            "description": "Your damaging spells and abilities have a chance to decrease your target's movement speed by 45% for 20 sec.",
+            "proc_per_minute": 1.5,
+            "proc": "damage_ability",
+            "effect": "target_movement_speed",
+            "percent": -45,
+            "duration": 20,
+            "average_effect": -22.5,
+            "image": "bearers_pursuit"
+        },
+        
     }
 }
